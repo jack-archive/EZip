@@ -10,9 +10,9 @@
 		04DAD2BD190C355C00E4383D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DAD2BC190C355C00E4383D /* Foundation.framework */; };
 		04DAD2C0190C355C00E4383D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAD2BF190C355C00E4383D /* main.m */; };
 		04DAD2C4190C355C00E4383D /* hfz.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04DAD2C3190C355C00E4383D /* hfz.1 */; };
-		04DAD2CD190C362E00E4383D /* hfzutls.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAD2CC190C362E00E4383D /* hfzutls.m */; };
 		04DAD2D0190C486F00E4383D /* hfz.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAD2CF190C486F00E4383D /* hfz.m */; };
-		04DAD2D6190C4E5500E4383D /* HFNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAD2D5190C4E5500E4383D /* HFNode.m */; };
+		04DAD2DB190C562700E4383D /* HFNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAD2D8190C562700E4383D /* HFNode.m */; };
+		04DAD2DC190C562700E4383D /* hfzutls.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAD2DA190C562700E4383D /* hfzutls.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,12 +34,12 @@
 		04DAD2BF190C355C00E4383D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04DAD2C2190C355C00E4383D /* hfz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hfz-Prefix.pch"; sourceTree = "<group>"; };
 		04DAD2C3190C355C00E4383D /* hfz.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = hfz.1; sourceTree = "<group>"; };
-		04DAD2CB190C362E00E4383D /* hfzutls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hfzutls.h; sourceTree = SOURCE_ROOT; };
-		04DAD2CC190C362E00E4383D /* hfzutls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hfzutls.m; sourceTree = SOURCE_ROOT; };
 		04DAD2CE190C486F00E4383D /* hfz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hfz.h; sourceTree = "<group>"; };
 		04DAD2CF190C486F00E4383D /* hfz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hfz.m; sourceTree = "<group>"; };
-		04DAD2D4190C4E5500E4383D /* HFNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFNode.h; path = ../HFNode.h; sourceTree = "<group>"; };
-		04DAD2D5190C4E5500E4383D /* HFNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFNode.m; path = ../HFNode.m; sourceTree = "<group>"; };
+		04DAD2D7190C562700E4383D /* HFNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFNode.h; sourceTree = "<group>"; };
+		04DAD2D8190C562700E4383D /* HFNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFNode.m; sourceTree = "<group>"; };
+		04DAD2D9190C562700E4383D /* hfzutls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hfzutls.h; sourceTree = "<group>"; };
+		04DAD2DA190C562700E4383D /* hfzutls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hfzutls.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +82,10 @@
 		04DAD2BE190C355C00E4383D /* hfz */ = {
 			isa = PBXGroup;
 			children = (
-				04DAD2D4190C4E5500E4383D /* HFNode.h */,
-				04DAD2D5190C4E5500E4383D /* HFNode.m */,
-				04DAD2CB190C362E00E4383D /* hfzutls.h */,
-				04DAD2CC190C362E00E4383D /* hfzutls.m */,
+				04DAD2D7190C562700E4383D /* HFNode.h */,
+				04DAD2D8190C562700E4383D /* HFNode.m */,
+				04DAD2D9190C562700E4383D /* hfzutls.h */,
+				04DAD2DA190C562700E4383D /* hfzutls.m */,
 				04DAD2CE190C486F00E4383D /* hfz.h */,
 				04DAD2CF190C486F00E4383D /* hfz.m */,
 				04DAD2BF190C355C00E4383D /* main.m */,
@@ -154,10 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DAD2DC190C562700E4383D /* hfzutls.m in Sources */,
 				04DAD2D0190C486F00E4383D /* hfz.m in Sources */,
-				04DAD2CD190C362E00E4383D /* hfzutls.m in Sources */,
+				04DAD2DB190C562700E4383D /* HFNode.m in Sources */,
 				04DAD2C0190C355C00E4383D /* main.m in Sources */,
-				04DAD2D6190C4E5500E4383D /* HFNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
