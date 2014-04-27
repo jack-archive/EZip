@@ -27,5 +27,6 @@
 
 -(void) constructTree;
 -(void) addNode:(EZNode*) node;
+-(void) GenerateCodes:(EZNode*) node toArray:(NSMutableArray*) array currentCode:(NSString*) code;
 
 @end

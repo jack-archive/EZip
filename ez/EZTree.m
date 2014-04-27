@@ -20,7 +20,8 @@
 #import "EZNode.h"
 #import "ez.h"
 #import "ezutils.h"
-#import "EZEncodeChar.h"
+#import "EZCodedCharacter.h"
+#import "EZBitset.h"
 
 @interface EZTree()
 @property (nonatomic, readwrite, strong) NSMutableArray* BaseNodes;
@@ -48,6 +49,10 @@
     [self SortNodeArray];
 
     NSMutableArray* arr = [self.BaseNodes mutableCopy];
+
+    for (int a = 0; a < arr.count; a++) {
+        ((EZNode*)arr[a]).isLeaf = YES;
+    }
 
     while (arr.count > 1) {
         EZNode* node1 = arr[0];
@@ -77,17 +82,26 @@
 }
 
 
--(void) GenerateCodes {
+-(void) GenerateCodes:(EZNode*) node toArray:(NSMutableArray*) array currentCode:(NSString*) code {
     if (self.modified) {
         [self constructTree];
     }
 
-    
+    if (node.isLeaf) {
+        EZCodedCharacter* charc = [[EZCodedCharacter alloc] init];
+        charc.character = node.charc;
+        charc.code = code;
+        [array addObject:charc];
+    } else {
+        if (node.leftChild) {
+            [self GenerateCodes:node.leftChild toArray:array currentCode:[code stringByAppendingString:@"0"]];
+        }
 
-
+        if (node.rightChild) {
+            [self GenerateCodes:node.rightChild toArray:array currentCode:[code stringByAppendingString:@"1"]];
+        }
+    }
 }
-
-
 
 +(NSArray*) sortEZNodeArray:(NSArray*) arr {
 

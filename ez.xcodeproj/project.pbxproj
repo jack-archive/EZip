@@ -12,10 +12,11 @@
 		04CA3F90190C93C300A6C2A9 /* ez.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04CA3F8F190C93C300A6C2A9 /* ez.1 */; };
 		04CA3F98190C93F200A6C2A9 /* ez.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3F97190C93F200A6C2A9 /* ez.m */; };
 		04CA3F9B190C940500A6C2A9 /* ezutils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3F9A190C940500A6C2A9 /* ezutils.m */; };
-		04CA3FA3190D2B2500A6C2A9 /* bitset.c in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3FA1190D2B2500A6C2A9 /* bitset.c */; };
 		04CA3FA6190D2D8D00A6C2A9 /* EZNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3FA5190D2D8D00A6C2A9 /* EZNode.m */; };
 		04CA3FA9190D2D9A00A6C2A9 /* EZTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3FA8190D2D9A00A6C2A9 /* EZTree.m */; };
 		04CA3FAF190D661300A6C2A9 /* EZCodedCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3FAE190D661300A6C2A9 /* EZCodedCharacter.m */; };
+		04CA3FB2190D777F00A6C2A9 /* EZBitset.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3FB1190D777F00A6C2A9 /* EZBitset.m */; };
+		04CA3FB8190D7DB700A6C2A9 /* EZFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3FB7190D7DB700A6C2A9 /* EZFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,14 +42,16 @@
 		04CA3F97190C93F200A6C2A9 /* ez.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ez.m; sourceTree = "<group>"; };
 		04CA3F99190C940500A6C2A9 /* ezutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ezutils.h; sourceTree = "<group>"; };
 		04CA3F9A190C940500A6C2A9 /* ezutils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ezutils.m; sourceTree = "<group>"; };
-		04CA3FA1190D2B2500A6C2A9 /* bitset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitset.c; sourceTree = "<group>"; };
-		04CA3FA2190D2B2500A6C2A9 /* bitset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitset.h; sourceTree = "<group>"; };
 		04CA3FA4190D2D8D00A6C2A9 /* EZNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZNode.h; sourceTree = "<group>"; };
 		04CA3FA5190D2D8D00A6C2A9 /* EZNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZNode.m; sourceTree = "<group>"; };
 		04CA3FA7190D2D9A00A6C2A9 /* EZTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZTree.h; sourceTree = "<group>"; };
 		04CA3FA8190D2D9A00A6C2A9 /* EZTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZTree.m; sourceTree = "<group>"; };
 		04CA3FAD190D661300A6C2A9 /* EZCodedCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZCodedCharacter.h; sourceTree = "<group>"; };
 		04CA3FAE190D661300A6C2A9 /* EZCodedCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZCodedCharacter.m; sourceTree = "<group>"; };
+		04CA3FB0190D777F00A6C2A9 /* EZBitset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZBitset.h; sourceTree = "<group>"; };
+		04CA3FB1190D777F00A6C2A9 /* EZBitset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZBitset.m; sourceTree = "<group>"; };
+		04CA3FB6190D7DB700A6C2A9 /* EZFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZFile.h; sourceTree = "<group>"; };
+		04CA3FB7190D7DB700A6C2A9 /* EZFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +94,12 @@
 		04CA3F8A190C93C300A6C2A9 /* ez */ = {
 			isa = PBXGroup;
 			children = (
+				04CA3FB6190D7DB700A6C2A9 /* EZFile.h */,
+				04CA3FB7190D7DB700A6C2A9 /* EZFile.m */,
 				04CA3F96190C93F200A6C2A9 /* ez.h */,
 				04CA3F97190C93F200A6C2A9 /* ez.m */,
-				04CA3FA1190D2B2500A6C2A9 /* bitset.c */,
-				04CA3FA2190D2B2500A6C2A9 /* bitset.h */,
+				04CA3FB0190D777F00A6C2A9 /* EZBitset.h */,
+				04CA3FB1190D777F00A6C2A9 /* EZBitset.m */,
 				04CA3F99190C940500A6C2A9 /* ezutils.h */,
 				04CA3F9A190C940500A6C2A9 /* ezutils.m */,
 				04CA3FAD190D661300A6C2A9 /* EZCodedCharacter.h */,
@@ -169,13 +174,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CA3FA3190D2B2500A6C2A9 /* bitset.c in Sources */,
 				04CA3F98190C93F200A6C2A9 /* ez.m in Sources */,
 				04CA3FA9190D2D9A00A6C2A9 /* EZTree.m in Sources */,
+				04CA3FB8190D7DB700A6C2A9 /* EZFile.m in Sources */,
 				04CA3F9B190C940500A6C2A9 /* ezutils.m in Sources */,
 				04CA3FAF190D661300A6C2A9 /* EZCodedCharacter.m in Sources */,
 				04CA3F8C190C93C300A6C2A9 /* main.m in Sources */,
 				04CA3FA6190D2D8D00A6C2A9 /* EZNode.m in Sources */,
+				04CA3FB2190D777F00A6C2A9 /* EZBitset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
