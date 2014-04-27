@@ -18,6 +18,7 @@
 
 #import "ez.h"
 #import "ezutils.h"
+#import "bitset.h"
 
 @implementation ez
 
@@ -25,7 +26,12 @@
     NSData* rv;
 
 
+    bitset byteset;
+    byteset = 13;
 
+    unsetBit(&byteset, 15);
+
+    print(@"%d", byteset);
 
 
     return rv;
@@ -37,7 +43,10 @@
     if (!str) {
         str = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
         if (!str) {
-            printErr(@"Unable To Detect File Encoding");
+            str = [[NSString alloc] initWithData:data encoding:NSUTF16StringEncoding];
+            if (!str) {
+                printErr(@"Unable To Detect File Encoding");
+            }
         }
     }
 

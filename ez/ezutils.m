@@ -99,6 +99,18 @@ void printHelp() {
 
 void printVersion() {
     print(@"Express Zip Version: %s", __EZ_VERSION__);
+    print(@"Built On: %s at %s", __DATE__, __TIME__);
+    print(@"Copyright (c) 2014 Jack Maloney");
+
+    print(@"\nThis program is free software: you can redistribute it and/or modify");
+    print(@"it under the terms of the GNU General Public License as published by");
+    print(@"the Free Software Foundation, either version 3 of the License, or");
+    print(@"(at your option) any later version.\n");
+
+    print(@"This program is distributed in the hope that it will be useful,");
+    print(@"but WITHOUT ANY WARRANTY; without even the implied warranty of");
+    print(@"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the");
+    print(@"GNU General Public License for more details.");
 }
 
 void showLicense() {

@@ -12,6 +12,7 @@
 		04CA3F90190C93C300A6C2A9 /* ez.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04CA3F8F190C93C300A6C2A9 /* ez.1 */; };
 		04CA3F98190C93F200A6C2A9 /* ez.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3F97190C93F200A6C2A9 /* ez.m */; };
 		04CA3F9B190C940500A6C2A9 /* ezutils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3F9A190C940500A6C2A9 /* ezutils.m */; };
+		04CA3F9F190CA71E00A6C2A9 /* bitset.c in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3F9E190CA71E00A6C2A9 /* bitset.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		04CA3F97190C93F200A6C2A9 /* ez.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ez.m; sourceTree = "<group>"; };
 		04CA3F99190C940500A6C2A9 /* ezutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ezutils.h; sourceTree = "<group>"; };
 		04CA3F9A190C940500A6C2A9 /* ezutils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ezutils.m; sourceTree = "<group>"; };
+		04CA3F9E190CA71E00A6C2A9 /* bitset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bitset.c; path = ../bitset.c; sourceTree = "<group>"; };
+		04CA3FA0190CA72800A6C2A9 /* bitset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = bitset.h; path = ../bitset.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 		04CA3F8A190C93C300A6C2A9 /* ez */ = {
 			isa = PBXGroup;
 			children = (
+				04CA3F9E190CA71E00A6C2A9 /* bitset.c */,
+				04CA3FA0190CA72800A6C2A9 /* bitset.h */,
 				04CA3F8B190C93C300A6C2A9 /* main.m */,
 				04CA3F96190C93F200A6C2A9 /* ez.h */,
 				04CA3F97190C93F200A6C2A9 /* ez.m */,
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CA3F9F190CA71E00A6C2A9 /* bitset.c in Sources */,
 				04CA3F98190C93F200A6C2A9 /* ez.m in Sources */,
 				04CA3F9B190C940500A6C2A9 /* ezutils.m in Sources */,
 				04CA3F8C190C93C300A6C2A9 /* main.m in Sources */,

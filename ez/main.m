@@ -48,11 +48,7 @@ int main(int argc, const char * argv[])
 
             NSData* data = [NSData dataWithContentsOfFile:[NSString stringWithUTF8String:argv[2]]];
 
-            // print(@"%@", data);
-
             [ez compressData:data];
-
-            NSFileHandle* file = [NSFileHandle fileHandleForWritingAtPath:[NSString stringWithUTF8String:argv[2]]];
 
         } else if ([@"-x" isEqualToString:arg]) {
             // Extract Archive
