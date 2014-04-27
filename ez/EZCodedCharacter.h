@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "bitset.h"
+#import "EZBitset.h"
 
 @interface EZCodedCharacter : NSObject
 
-@property bitset code;
+@property NSString* code;
 @property char character;
 
 @end

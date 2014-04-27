@@ -19,6 +19,7 @@
 #import <Foundation/Foundation.h>
 #import "ezutils.h"
 #import "ez.h"
+#import "EZTree.h"
 
 int main(int argc, const char * argv[])
 {
@@ -45,10 +46,11 @@ int main(int argc, const char * argv[])
                 printErr(@"-c Requires An Argument");
                 exit(1);
             }
+            
+            print(@"Compressing file at %@ ", [NSString stringWithUTF8String:argv[2]]);
+            print(@"\tIndexing File...");
 
             NSData* data = [NSData dataWithContentsOfFile:[NSString stringWithUTF8String:argv[2]]];
-
-            print(@"Compressing file at %@ ", [NSString stringWithUTF8String:argv[2]]);
 
             [ez compressData:data];
 

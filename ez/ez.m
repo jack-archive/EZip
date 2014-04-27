@@ -18,7 +18,6 @@
 
 #import "ez.h"
 #import "ezutils.h"
-#import "bitset.h"
 #import "EZTree.h"
 #import "EZCodedCharacter.h"
 
@@ -49,11 +48,15 @@
         [tree addNode:echar];
     }
 
-    print(@"%d", cs.count);
-
+    print(@"\tBuilding Codes...");
     [tree constructTree];
 
-    
+    NSMutableArray* codes = [[NSMutableArray alloc] init];
+    [tree GenerateCodes:((EZNode*) tree.Nodes[0]) toArray:codes currentCode:@""];
+
+    for (int a = 0; a < codes.count; a++) {
+        print(@"{%c, %@}", ((EZCodedCharacter*)codes[a]).character, ((EZCodedCharacter*)codes[a]).code);
+    }
 
     NSTimeInterval timeInterval = [start timeIntervalSinceNow];
     timeInterval = timeInterval - (timeInterval * 2);

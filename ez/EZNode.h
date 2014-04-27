@@ -25,5 +25,6 @@
 @property EZNode* rightChild;
 @property char charc;
 @property int count;
+@property BOOL isLeaf;
 
 @end
