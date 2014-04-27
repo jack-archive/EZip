@@ -1,5 +1,5 @@
 //
-//  ez, Awesome File Compression
+//  EZip, Awesome File Compression
 //  Copyright (c) 2014 Jack Maloney. All rights reserved.
 //
 //  This program is free software: you can redistribute it and/or modify
@@ -99,7 +99,7 @@ void printHelp() {
 }
 
 void printVersion() {
-    print(@"Express Zip Version: %s", __EZ_VERSION__);
+    print(@"EZip Version: %s", __EZ_VERSION__);
     print(@"Built On: %s at %s", __DATE__, __TIME__);
     print(@"\nCopyright (c) 2014 Jack Maloney");
 
