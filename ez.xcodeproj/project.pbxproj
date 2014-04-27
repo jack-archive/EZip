@@ -10,6 +10,8 @@
 		04CA3F89190C93C300A6C2A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA3F88190C93C300A6C2A9 /* Foundation.framework */; };
 		04CA3F8C190C93C300A6C2A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3F8B190C93C300A6C2A9 /* main.m */; };
 		04CA3F90190C93C300A6C2A9 /* ez.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04CA3F8F190C93C300A6C2A9 /* ez.1 */; };
+		04CA3F98190C93F200A6C2A9 /* ez.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3F97190C93F200A6C2A9 /* ez.m */; };
+		04CA3F9B190C940500A6C2A9 /* ezutils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3F9A190C940500A6C2A9 /* ezutils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		04CA3F8B190C93C300A6C2A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04CA3F8E190C93C300A6C2A9 /* ez-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ez-Prefix.pch"; sourceTree = "<group>"; };
 		04CA3F8F190C93C300A6C2A9 /* ez.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ez.1; sourceTree = "<group>"; };
+		04CA3F96190C93F200A6C2A9 /* ez.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ez.h; sourceTree = "<group>"; };
+		04CA3F97190C93F200A6C2A9 /* ez.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ez.m; sourceTree = "<group>"; };
+		04CA3F99190C940500A6C2A9 /* ezutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ezutils.h; sourceTree = "<group>"; };
+		04CA3F9A190C940500A6C2A9 /* ezutils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ezutils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				04CA3F8B190C93C300A6C2A9 /* main.m */,
+				04CA3F96190C93F200A6C2A9 /* ez.h */,
+				04CA3F97190C93F200A6C2A9 /* ez.m */,
+				04CA3F99190C940500A6C2A9 /* ezutils.h */,
+				04CA3F9A190C940500A6C2A9 /* ezutils.m */,
 				04CA3F8F190C93C300A6C2A9 /* ez.1 */,
 				04CA3F8D190C93C300A6C2A9 /* Supporting Files */,
 			);
@@ -139,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CA3F98190C93F200A6C2A9 /* ez.m in Sources */,
+				04CA3F9B190C940500A6C2A9 /* ezutils.m in Sources */,
 				04CA3F8C190C93C300A6C2A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
