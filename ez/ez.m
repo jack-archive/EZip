@@ -19,12 +19,17 @@
 #import "ez.h"
 #import "ezutils.h"
 #import "bitset.h"
-#import "EZEncodeChar.h"
+#import "EZTree.h"
+#import "EZCodedCharacter.h"
 
 @implementation ez
 
 +(NSData*) compressData:(NSData*)data {
     NSData* rv;
+
+    long OriginalBytes = [data length];
+
+    NSDate* start = [NSDate date];
 
     NSString* s = [ez detectEncoding:data];
 
@@ -34,21 +39,25 @@
         [cs addObject:@([s characterAtIndex:a])];
     }
 
-    NSMutableArray* counts = [[NSMutableArray alloc] initWithCapacity:0];
+    EZTree* tree = [[EZTree alloc] init];
 
     for (NSNumber* ch in cs) {
         int freq = (int) [cs countForObject:ch];
-        EZEncodeChar* echar = [[EZEncodeChar alloc] init];
+        EZNode* echar = [[EZNode alloc] init];
         echar.count = freq;
         echar.charc = [ch integerValue];
-        [counts addObject:echar];
+        [tree addNode:echar];
     }
 
-    NSArray* x = [ez BubbleSortEZEncodeCharArray:counts];
+    print(@"%d", cs.count);
 
-    for (int a = 0; a < x.count; a++) {
-        print(@"%d", ((EZEncodeChar*)x[a]).count);
-    }
+    [tree constructTree];
+
+    
+
+    NSTimeInterval timeInterval = [start timeIntervalSinceNow];
+    timeInterval = timeInterval - (timeInterval * 2);
+    printInfo(@"Compressed %d Bytes in %f Seconds", OriginalBytes, timeInterval);
 
     return rv;
 }
@@ -67,33 +76,6 @@
     }
 
     return str;
-}
-
-+(NSArray*) BubbleSortEZEncodeCharArray:(NSArray*) arr {
-    NSMutableArray* rv = [arr mutableCopy];
-
-    while (true) {
-        BOOL hasSorted = NO;
-        for (int a = 0; a < rv.count - 1; a++) {
-            if (![rv[a] isKindOfClass:[EZEncodeChar class]]) {
-                printErr(@"Malformed Array");
-                exit(1);
-            }
-
-            if (((EZEncodeChar*)rv[a]).count > ((EZEncodeChar*)rv[a + 1]).count) {
-                hasSorted = YES;
-                EZEncodeChar* item1 = ((EZEncodeChar*)rv[a]);
-                EZEncodeChar* item2 = ((EZEncodeChar*)rv[a + 1]);
-
-                [rv replaceObjectAtIndex:a withObject:item2];
-                [rv replaceObjectAtIndex:a + 1 withObject:item1];
-            }
-        }
-        if (!hasSorted) {
-            break;
-        }
-    }
-    return rv;
 }
 
 @end

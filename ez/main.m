@@ -48,6 +48,8 @@ int main(int argc, const char * argv[])
 
             NSData* data = [NSData dataWithContentsOfFile:[NSString stringWithUTF8String:argv[2]]];
 
+            print(@"Compressing file at %@ ", [NSString stringWithUTF8String:argv[2]]);
+
             [ez compressData:data];
 
         } else if ([@"-x" isEqualToString:arg]) {
