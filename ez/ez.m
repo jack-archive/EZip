@@ -1,5 +1,5 @@
 //
-//  hfz, simplistic Huffman Tree file compression
+//  ez, Awesome File Compression
 //  Copyright (c) 2014 Jack Maloney. All rights reserved.
 //
 //  This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 //
 
 #import "ez.h"
+#import "ezutils.h"
 
 @implementation ez
 
@@ -25,7 +26,22 @@
 
 
 
+
+
     return rv;
+}
+
++(NSString*) detectEncodingAndReturnString:(NSData*) data {
+    NSString* str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+
+    if (!str) {
+        str = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+        if (!str) {
+            printErr(@"Unable To Detect File Encoding");
+        }
+    }
+
+    return str;
 }
 
 @end

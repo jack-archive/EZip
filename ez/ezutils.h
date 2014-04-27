@@ -1,5 +1,5 @@
 //
-//  hfz, simplistic Huffman Tree file compression
+//  ez, Awesome File Compression
 //  Copyright (c) 2014 Jack Maloney. All rights reserved.
 //
 //  This program is free software: you can redistribute it and/or modify
@@ -35,6 +35,24 @@ static NSString* BOLDMAGENTA = @"\033[1m\033[35m";  /* Bold Magenta */
 static NSString* BOLDBLUE = @"\033[1m\033[34m";     /* Bold Blue */
 
 #define __EZ_VERSION__ "1.0.0-Beta1"
+
+#define BIT_0_1 10000000
+#define BIT_1_1 01000000
+#define BIT_2_1 00100000
+#define BIT_3_1 00010000
+#define BIT_4_1 00001000
+#define BIT_5_1 00000100
+#define BIT_6_1 00000010
+#define BIT_7_1 00000001
+
+#define BIT_0_0 01111111
+#define BIT_1_0 10111111
+#define BIT_2_0 11011111
+#define BIT_3_0 11101111
+#define BIT_4_0 11110111
+#define BIT_5_0 11111011
+#define BIT_6_0 11111101
+#define BIT_7_0 11111110
 
 @interface ezutils : NSObject
 
