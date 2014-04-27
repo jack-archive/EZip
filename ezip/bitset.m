@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Jack Maloney. All rights reserved.
 //
 
-#import "EZBitset.h"
+#import "bitset.h"
 
 @implementation EZBitset
 

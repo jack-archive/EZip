@@ -39,11 +39,11 @@ int main(int argc, const char * argv[])
             printVersion();
         } else if ([@"-l" isEqualToString:arg]) {
             showLicense();
-        } else if ([@"-c" isEqualToString:arg]) {
+        } else if ([@"-a" isEqualToString:arg]) {
             // Create Archive
 
             if (argc < 3) {
-                printErr(@"-c Requires An Argument");
+                printErr(@"-a Requires An Argument");
                 exit(1);
             }
             

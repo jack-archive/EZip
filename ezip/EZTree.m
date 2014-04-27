@@ -20,13 +20,15 @@
 #import "EZNode.h"
 #import "ez.h"
 #import "ezutils.h"
-#import "EZCodedCharacter.h"
-#import "EZBitset.h"
+#import "bitset.h"
 
 @interface EZTree()
+
 @property (nonatomic, readwrite, strong) NSMutableArray* BaseNodes;
 @property (nonatomic, readwrite, strong) NSMutableArray* Nodes;
 @property (nonatomic, readwrite) BOOL modified;
+@property (nonatomic, readwrite, strong) NSMapTable* Codes;
+
 @end
 
 @implementation EZTree
@@ -82,25 +84,25 @@
 }
 
 
--(void) GenerateCodes:(EZNode*) node toArray:(NSMutableArray*) array currentCode:(NSString*) code {
+-(void) GenerateCodes:(EZNode*) node toMap:(EZCodeMap*)map currentCode:(NSString*) code {
     if (self.modified) {
         [self constructTree];
+
     }
 
     if (node.isLeaf) {
-        EZCodedCharacter* charc = [[EZCodedCharacter alloc] init];
-        charc.character = node.charc;
-        charc.code = code;
-        [array addObject:charc];
+        [map setObject:code forKey:@(node.charc)];
+        print(@"%c", node.charc);
     } else {
         if (node.leftChild) {
-            [self GenerateCodes:node.leftChild toArray:array currentCode:[code stringByAppendingString:@"0"]];
+            [self GenerateCodes:node.leftChild toMap:map currentCode:[code stringByAppendingString:@"0"]];
         }
 
         if (node.rightChild) {
-            [self GenerateCodes:node.rightChild toArray:array currentCode:[code stringByAppendingString:@"1"]];
+            [self GenerateCodes:node.rightChild toMap:map currentCode:[code stringByAppendingString:@"1"]];
         }
     }
+
 }
 
 +(NSArray*) sortEZNodeArray:(NSArray*) arr {

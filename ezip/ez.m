@@ -19,7 +19,6 @@
 #import "ez.h"
 #import "ezutils.h"
 #import "EZTree.h"
-#import "EZCodedCharacter.h"
 
 @implementation ez
 
@@ -48,14 +47,17 @@
         [tree addNode:echar];
     }
 
-    print(@"\tBuilding Codes...");
+    print(@"\tBuilding Tree...");
     [tree constructTree];
 
-    NSMutableArray* codes = [[NSMutableArray alloc] init];
-    [tree GenerateCodes:((EZNode*) tree.Nodes[0]) toArray:codes currentCode:@""];
+    print(@"\tGenerating Codes...");
+    EZCodeMap* codes = [NSMapTable strongToStrongObjectsMapTable];
+    [tree GenerateCodes:((EZNode*) tree.Nodes[0]) toMap:codes currentCode:@""];
 
-    for (int a = 0; a < codes.count; a++) {
-        print(@"{%c, %@}", ((EZCodedCharacter*)codes[a]).character, ((EZCodedCharacter*)codes[a]).code);
+    NSFileHandle* f = [NSFileHandle fileHandleForWritingAtPath:@"./test.ez"];
+
+    for (int a = 0; a < s.length; a++) {
+        [ez CompressAndWriteCharacter:[s characterAtIndex:a] WithCoding:codes ToFile:f];
     }
 
     NSTimeInterval timeInterval = [start timeIntervalSinceNow];
@@ -63,6 +65,11 @@
     printInfo(@"Compressed %d Bytes in %f Seconds", OriginalBytes, timeInterval);
 
     return rv;
+}
+
++(void) CompressAndWriteCharacter:(char) character WithCoding:(EZCodeMap*) codes ToFile:(NSFileHandle*) file {
+    NSString* code = [codes objectForKey:@(character)];
+    
 }
 
 +(NSString*) detectEncoding:(NSData*) data {
@@ -74,6 +81,7 @@
             str = [[NSString alloc] initWithData:data encoding:NSUTF16StringEncoding];
             if (!str) {
                 printErr(@"Unable To Detect File Encoding");
+                exit(1);
             }
         }
     }

@@ -7,69 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04CA3F89190C93C300A6C2A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA3F88190C93C300A6C2A9 /* Foundation.framework */; };
-		04CA3F8C190C93C300A6C2A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3F8B190C93C300A6C2A9 /* main.m */; };
-		04CA3F90190C93C300A6C2A9 /* ez.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04CA3F8F190C93C300A6C2A9 /* ez.1 */; };
-		04CA3F98190C93F200A6C2A9 /* ez.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3F97190C93F200A6C2A9 /* ez.m */; };
-		04CA3F9B190C940500A6C2A9 /* ezutils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3F9A190C940500A6C2A9 /* ezutils.m */; };
-		04CA3FA6190D2D8D00A6C2A9 /* EZNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3FA5190D2D8D00A6C2A9 /* EZNode.m */; };
-		04CA3FA9190D2D9A00A6C2A9 /* EZTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3FA8190D2D9A00A6C2A9 /* EZTree.m */; };
-		04CA3FAF190D661300A6C2A9 /* EZCodedCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3FAE190D661300A6C2A9 /* EZCodedCharacter.m */; };
-		04CA3FB2190D777F00A6C2A9 /* EZBitset.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3FB1190D777F00A6C2A9 /* EZBitset.m */; };
-		04CA3FB8190D7DB700A6C2A9 /* EZFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA3FB7190D7DB700A6C2A9 /* EZFile.m */; };
+		04635245190DA548003C8281 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA3F88190C93C300A6C2A9 /* Foundation.framework */; };
+		0463527C190DA630003C8281 /* ez.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463526C190DA630003C8281 /* ez.m */; };
+		04635280190DA630003C8281 /* EZNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04635276190DA630003C8281 /* EZNode.m */; };
+		04635281190DA630003C8281 /* EZTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 04635278190DA630003C8281 /* EZTree.m */; };
+		04635282190DA630003C8281 /* ezutils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463527A190DA630003C8281 /* ezutils.m */; };
+		04635283190DA630003C8281 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463527B190DA630003C8281 /* main.m */; };
+		048BCD2F190DBB4D00ADBCCC /* bitset.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCD2E190DBB4D00ADBCCC /* bitset.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		04CA3F83190C93C300A6C2A9 /* CopyFiles */ = {
+		04635242190DA548003C8281 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				04CA3F90190C93C300A6C2A9 /* ez.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		04CA3F85190C93C300A6C2A9 /* ez */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ez; sourceTree = BUILT_PRODUCTS_DIR; };
+		04635244190DA548003C8281 /* ezip */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ezip; sourceTree = BUILT_PRODUCTS_DIR; };
+		0463526A190DA630003C8281 /* ez.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; name = ez.1; path = ezip/ez.1; sourceTree = SOURCE_ROOT; };
+		0463526B190DA630003C8281 /* ez.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ez.h; sourceTree = "<group>"; };
+		0463526C190DA630003C8281 /* ez.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ez.m; sourceTree = "<group>"; };
+		04635274190DA630003C8281 /* ezip-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ezip-Prefix.pch"; path = "ezip/ezip-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		04635275190DA630003C8281 /* EZNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZNode.h; sourceTree = "<group>"; };
+		04635276190DA630003C8281 /* EZNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZNode.m; sourceTree = "<group>"; };
+		04635277190DA630003C8281 /* EZTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZTree.h; sourceTree = "<group>"; };
+		04635278190DA630003C8281 /* EZTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZTree.m; sourceTree = "<group>"; };
+		04635279190DA630003C8281 /* ezutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ezutils.h; sourceTree = "<group>"; };
+		0463527A190DA630003C8281 /* ezutils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ezutils.m; sourceTree = "<group>"; };
+		0463527B190DA630003C8281 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		048BCD2D190DBB4D00ADBCCC /* bitset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitset.h; sourceTree = "<group>"; };
+		048BCD2E190DBB4D00ADBCCC /* bitset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bitset.m; sourceTree = "<group>"; };
 		04CA3F88190C93C300A6C2A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		04CA3F8B190C93C300A6C2A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		04CA3F8E190C93C300A6C2A9 /* ez-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ez-Prefix.pch"; sourceTree = "<group>"; };
-		04CA3F8F190C93C300A6C2A9 /* ez.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ez.1; sourceTree = "<group>"; };
-		04CA3F96190C93F200A6C2A9 /* ez.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ez.h; sourceTree = "<group>"; };
-		04CA3F97190C93F200A6C2A9 /* ez.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ez.m; sourceTree = "<group>"; };
-		04CA3F99190C940500A6C2A9 /* ezutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ezutils.h; sourceTree = "<group>"; };
-		04CA3F9A190C940500A6C2A9 /* ezutils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ezutils.m; sourceTree = "<group>"; };
-		04CA3FA4190D2D8D00A6C2A9 /* EZNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZNode.h; sourceTree = "<group>"; };
-		04CA3FA5190D2D8D00A6C2A9 /* EZNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZNode.m; sourceTree = "<group>"; };
-		04CA3FA7190D2D9A00A6C2A9 /* EZTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZTree.h; sourceTree = "<group>"; };
-		04CA3FA8190D2D9A00A6C2A9 /* EZTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZTree.m; sourceTree = "<group>"; };
-		04CA3FAD190D661300A6C2A9 /* EZCodedCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZCodedCharacter.h; sourceTree = "<group>"; };
-		04CA3FAE190D661300A6C2A9 /* EZCodedCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZCodedCharacter.m; sourceTree = "<group>"; };
-		04CA3FB0190D777F00A6C2A9 /* EZBitset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZBitset.h; sourceTree = "<group>"; };
-		04CA3FB1190D777F00A6C2A9 /* EZBitset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZBitset.m; sourceTree = "<group>"; };
-		04CA3FB6190D7DB700A6C2A9 /* EZFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZFile.h; sourceTree = "<group>"; };
-		04CA3FB7190D7DB700A6C2A9 /* EZFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		04CA3F82190C93C300A6C2A9 /* Frameworks */ = {
+		04635241190DA548003C8281 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CA3F89190C93C300A6C2A9 /* Foundation.framework in Frameworks */,
+				04635245190DA548003C8281 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04635246190DA548003C8281 /* ezip */ = {
+			isa = PBXGroup;
+			children = (
+				04635275190DA630003C8281 /* EZNode.h */,
+				04635276190DA630003C8281 /* EZNode.m */,
+				04635277190DA630003C8281 /* EZTree.h */,
+				04635278190DA630003C8281 /* EZTree.m */,
+				048BCD2D190DBB4D00ADBCCC /* bitset.h */,
+				048BCD2E190DBB4D00ADBCCC /* bitset.m */,
+				0463526B190DA630003C8281 /* ez.h */,
+				0463526C190DA630003C8281 /* ez.m */,
+				04635279190DA630003C8281 /* ezutils.h */,
+				0463527A190DA630003C8281 /* ezutils.m */,
+				0463527B190DA630003C8281 /* main.m */,
+				04CA3F8D190C93C300A6C2A9 /* Supporting Files */,
+			);
+			path = ezip;
+			sourceTree = "<group>";
+		};
 		04CA3F7C190C93C300A6C2A9 = {
 			isa = PBXGroup;
 			children = (
-				04CA3F8A190C93C300A6C2A9 /* ez */,
+				04635246190DA548003C8281 /* ezip */,
 				04CA3F87190C93C300A6C2A9 /* Frameworks */,
 				04CA3F86190C93C300A6C2A9 /* Products */,
 			);
@@ -78,7 +89,7 @@
 		04CA3F86190C93C300A6C2A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04CA3F85190C93C300A6C2A9 /* ez */,
+				04635244190DA548003C8281 /* ezip */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,56 +102,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		04CA3F8A190C93C300A6C2A9 /* ez */ = {
-			isa = PBXGroup;
-			children = (
-				04CA3FB6190D7DB700A6C2A9 /* EZFile.h */,
-				04CA3FB7190D7DB700A6C2A9 /* EZFile.m */,
-				04CA3F96190C93F200A6C2A9 /* ez.h */,
-				04CA3F97190C93F200A6C2A9 /* ez.m */,
-				04CA3FB0190D777F00A6C2A9 /* EZBitset.h */,
-				04CA3FB1190D777F00A6C2A9 /* EZBitset.m */,
-				04CA3F99190C940500A6C2A9 /* ezutils.h */,
-				04CA3F9A190C940500A6C2A9 /* ezutils.m */,
-				04CA3FAD190D661300A6C2A9 /* EZCodedCharacter.h */,
-				04CA3FAE190D661300A6C2A9 /* EZCodedCharacter.m */,
-				04CA3FA4190D2D8D00A6C2A9 /* EZNode.h */,
-				04CA3FA5190D2D8D00A6C2A9 /* EZNode.m */,
-				04CA3FA7190D2D9A00A6C2A9 /* EZTree.h */,
-				04CA3FA8190D2D9A00A6C2A9 /* EZTree.m */,
-				04CA3F8B190C93C300A6C2A9 /* main.m */,
-				04CA3F8D190C93C300A6C2A9 /* Supporting Files */,
-			);
-			path = ez;
-			sourceTree = "<group>";
-		};
 		04CA3F8D190C93C300A6C2A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				04CA3F8F190C93C300A6C2A9 /* ez.1 */,
-				04CA3F8E190C93C300A6C2A9 /* ez-Prefix.pch */,
+				04635274190DA630003C8281 /* ezip-Prefix.pch */,
+				0463526A190DA630003C8281 /* ez.1 */,
 			);
 			name = "Supporting Files";
+			path = ../ez;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04CA3F84190C93C300A6C2A9 /* ez */ = {
+		04635243190DA548003C8281 /* ezip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04CA3F93190C93C300A6C2A9 /* Build configuration list for PBXNativeTarget "ez" */;
+			buildConfigurationList = 0463524D190DA548003C8281 /* Build configuration list for PBXNativeTarget "ezip" */;
 			buildPhases = (
-				04CA3F81190C93C300A6C2A9 /* Sources */,
-				04CA3F82190C93C300A6C2A9 /* Frameworks */,
-				04CA3F83190C93C300A6C2A9 /* CopyFiles */,
+				04635240190DA548003C8281 /* Sources */,
+				04635241190DA548003C8281 /* Frameworks */,
+				04635242190DA548003C8281 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ez;
-			productName = ez;
-			productReference = 04CA3F85190C93C300A6C2A9 /* ez */;
+			name = ezip;
+			productName = ezip;
+			productReference = 04635244190DA548003C8281 /* ezip */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -164,30 +153,50 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04CA3F84190C93C300A6C2A9 /* ez */,
+				04635243190DA548003C8281 /* ezip */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		04CA3F81190C93C300A6C2A9 /* Sources */ = {
+		04635240190DA548003C8281 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CA3F98190C93F200A6C2A9 /* ez.m in Sources */,
-				04CA3FA9190D2D9A00A6C2A9 /* EZTree.m in Sources */,
-				04CA3FB8190D7DB700A6C2A9 /* EZFile.m in Sources */,
-				04CA3F9B190C940500A6C2A9 /* ezutils.m in Sources */,
-				04CA3FAF190D661300A6C2A9 /* EZCodedCharacter.m in Sources */,
-				04CA3F8C190C93C300A6C2A9 /* main.m in Sources */,
-				04CA3FA6190D2D8D00A6C2A9 /* EZNode.m in Sources */,
-				04CA3FB2190D777F00A6C2A9 /* EZBitset.m in Sources */,
+				0463527C190DA630003C8281 /* ez.m in Sources */,
+				04635282190DA630003C8281 /* ezutils.m in Sources */,
+				04635281190DA630003C8281 /* EZTree.m in Sources */,
+				04635283190DA630003C8281 /* main.m in Sources */,
+				048BCD2F190DBB4D00ADBCCC /* bitset.m in Sources */,
+				04635280190DA630003C8281 /* EZNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0463524E190DA548003C8281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ezip/ezip-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0463524F190DA548003C8281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ezip/ezip-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		04CA3F91190C93C300A6C2A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -258,41 +267,23 @@
 			};
 			name = Release;
 		};
-		04CA3F94190C93C300A6C2A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ez/ez-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		04CA3F95190C93C300A6C2A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ez/ez-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0463524D190DA548003C8281 /* Build configuration list for PBXNativeTarget "ezip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0463524E190DA548003C8281 /* Debug */,
+				0463524F190DA548003C8281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		04CA3F80190C93C300A6C2A9 /* Build configuration list for PBXProject "ez" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04CA3F91190C93C300A6C2A9 /* Debug */,
 				04CA3F92190C93C300A6C2A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		04CA3F93190C93C300A6C2A9 /* Build configuration list for PBXNativeTarget "ez" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04CA3F94190C93C300A6C2A9 /* Debug */,
-				04CA3F95190C93C300A6C2A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -34,7 +34,7 @@ static NSString* BOLDCYAN = @"\033[1m\033[36m";     /* Bold Cyan */
 static NSString* BOLDMAGENTA = @"\033[1m\033[35m";  /* Bold Magenta */
 static NSString* BOLDBLUE = @"\033[1m\033[34m";     /* Bold Blue */
 
-#define __EZ_VERSION__ "1.0.0-Beta1"
+#define __EZ_VERSION__ "1.0.0-Beta2"
 
 @interface ezutils : NSObject
 

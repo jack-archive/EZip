@@ -17,16 +17,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "EZNode.h"
 
-@interface EZTree : NSObject
+typedef NSMapTable EZCodeMap;
 
-@property (nonatomic, readonly, strong) NSMutableArray* BaseNodes;
-@property (nonatomic, readonly, strong) NSMutableArray* Nodes;
-@property (nonatomic, readonly) BOOL modified;
+@interface ez : NSObject
 
--(void) constructTree;
--(void) addNode:(EZNode*) node;
--(void) GenerateCodes:(EZNode*) node toArray:(NSMutableArray*) array currentCode:(NSString*) code;
++(NSData*) compressData:(NSData*) data;
 
 @end
