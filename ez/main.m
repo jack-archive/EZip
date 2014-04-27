@@ -24,7 +24,7 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        
+
         if (argc < 2) {
             printUsage();
             exit(1);
@@ -52,6 +52,7 @@ int main(int argc, const char * argv[])
 
             [ez compressData:data];
 
+            NSFileHandle* file = [NSFileHandle fileHandleForWritingAtPath:[NSString stringWithUTF8String:argv[2]]];
 
         } else if ([@"-x" isEqualToString:arg]) {
             // Extract Archive

@@ -20,8 +20,10 @@
 
 @implementation ez
 
-+(NSData*) compressData:(NSData *)data {
++(NSData*) compressData:(NSData*)data {
     NSData* rv;
+
+
 
     return rv;
 }
