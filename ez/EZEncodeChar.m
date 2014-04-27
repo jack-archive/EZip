@@ -10,4 +10,6 @@
 
 @implementation EZEncodeChar
 
+
+
 @end

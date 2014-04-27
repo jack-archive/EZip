@@ -90,7 +90,7 @@ void printSuccess(NSString* x, ...) {
 }
 
 void printUsage() {
-    print(@"Usage: ez [-lhv] [-cx] arguments ...");
+    print(@"Usage: ez [-lhv] \nez [-cx] arguments ...");
     print(@"Type ez --help for more help");
 }
 

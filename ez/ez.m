@@ -41,16 +41,14 @@
         EZEncodeChar* echar = [[EZEncodeChar alloc] init];
         echar.count = freq;
         echar.charc = [ch integerValue];
-        print(@"%@", ch);
         [counts addObject:echar];
     }
 
-    [self BubbleSort:counts];
+    NSArray* x = [ez BubbleSortEZEncodeCharArray:counts];
 
-    for (int a = 0; a < counts.count; a++) {
-        print(@"%c, %d", ((EZEncodeChar*)counts[a]).charc, ((EZEncodeChar*)counts[a]).count);
+    for (int a = 0; a < x.count; a++) {
+        print(@"%d", ((EZEncodeChar*)x[a]).count);
     }
-
 
     return rv;
 }
@@ -71,50 +69,31 @@
     return str;
 }
 
-+(NSArray*) BubbleSort:(NSArray*) arr {
++(NSArray*) BubbleSortEZEncodeCharArray:(NSArray*) arr {
     NSMutableArray* rv = [arr mutableCopy];
 
-        while (TRUE) {
-
-            BOOL hasSwapped = NO;
-
-            for (int i=0; i < arr.count; i++){
-
-                /** out of bounds check */
-                if (i < arr.count - 1){
-
-                    if (![arr[i] isKindOfClass:[EZEncodeChar class]]) {
-                        printErr(@"Malformed Array For Bubblesorting");
-                    }
-
-                    NSUInteger currentIndexValue = ((EZEncodeChar*)arr[i+1]).count;
-                    NSUInteger nextIndexValue    = ((EZEncodeChar*)arr[i+1]).count;
-
-                    if (currentIndexValue > nextIndexValue){
-                        hasSwapped = YES;
-                        [self swapFirstIndex:i withSecondIndex:i+1 inMutableArray:arr];
-                    }
-                }
-
+    while (true) {
+        BOOL hasSorted = NO;
+        for (int a = 0; a < rv.count - 1; a++) {
+            if (![rv[a] isKindOfClass:[EZEncodeChar class]]) {
+                printErr(@"Malformed Array");
+                exit(1);
             }
 
-            /** already sorted, break out of the while loop */
-            if (!hasSwapped){
-                break;
+            if (((EZEncodeChar*)rv[a]).count > ((EZEncodeChar*)rv[a + 1]).count) {
+                hasSorted = YES;
+                EZEncodeChar* item1 = ((EZEncodeChar*)rv[a]);
+                EZEncodeChar* item2 = ((EZEncodeChar*)rv[a + 1]);
+
+                [rv replaceObjectAtIndex:a withObject:item2];
+                [rv replaceObjectAtIndex:a + 1 withObject:item1];
             }
-            
         }
-
+        if (!hasSorted) {
+            break;
+        }
+    }
     return rv;
-}
-
-+(void)swapFirstIndex:(NSUInteger)firstIndex withSecondIndex:(NSUInteger)secondIndex inMutableArray:(NSMutableArray*)array{
-
-    NSNumber* valueAtFirstIndex = array[firstIndex];
-    NSNumber* valueAtSecondIndex = array[secondIndex];
-
-    [array replaceObjectAtIndex:firstIndex withObject:valueAtSecondIndex];
-    [array replaceObjectAtIndex:secondIndex withObject:valueAtFirstIndex];
 }
 
 @end
