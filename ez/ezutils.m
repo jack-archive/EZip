@@ -91,6 +91,7 @@ void printSuccess(NSString* x, ...) {
 
 void printUsage() {
     print(@"Usage: ez [-lhv] [-cx] arguments ...");
+    print(@"Type ez --help for more help");
 }
 
 void printHelp() {
@@ -100,7 +101,7 @@ void printHelp() {
 void printVersion() {
     print(@"Express Zip Version: %s", __EZ_VERSION__);
     print(@"Built On: %s at %s", __DATE__, __TIME__);
-    print(@"Copyright (c) 2014 Jack Maloney");
+    print(@"\nCopyright (c) 2014 Jack Maloney");
 
     print(@"\nThis program is free software: you can redistribute it and/or modify");
     print(@"it under the terms of the GNU General Public License as published by");
