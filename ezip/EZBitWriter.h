@@ -17,11 +17,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ez.h"
 
-typedef NSMapTable EZCodeMap;
+@interface EZBitWriter : NSObject
 
-@interface ez : NSObject
+-(instancetype) initWithFile:(NSString*) path;
 
-+(NSData*) compressData:(NSData*) data;
-+(NSData*) decopmpressData:(NSData*) data;
+@property (nonatomic, readonly) FILE* file;
+@property (nonatomic, readonly) int position;
+@property (nonatomic, readonly, strong) NSString* current;
+
+-(void) CompressAndWriteCharacter:(char) character WithCoding:(EZCodeMap*) codes;
+-(void) flush;
+
 @end

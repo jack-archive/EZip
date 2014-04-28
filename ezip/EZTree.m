@@ -92,7 +92,7 @@
 
     if (node.isLeaf) {
         [map setObject:code forKey:@(node.charc)];
-        print(@"%c", node.charc);
+        print(@"%c, %@", node.charc, code);
     } else {
         if (node.leftChild) {
             [self GenerateCodes:node.leftChild toMap:map currentCode:[code stringByAppendingString:@"0"]];

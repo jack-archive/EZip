@@ -19,6 +19,7 @@
 #import "ez.h"
 #import "ezutils.h"
 #import "EZTree.h"
+#import "EZBitWriter.h"
 
 @implementation ez
 
@@ -54,22 +55,19 @@
     EZCodeMap* codes = [NSMapTable strongToStrongObjectsMapTable];
     [tree GenerateCodes:((EZNode*) tree.Nodes[0]) toMap:codes currentCode:@""];
 
-    NSFileHandle* f = [NSFileHandle fileHandleForWritingAtPath:@"./test.ez"];
+    EZBitWriter* bw = [[EZBitWriter alloc] initWithFile:@"./test.ez"];
 
     for (int a = 0; a < s.length; a++) {
-        [ez CompressAndWriteCharacter:[s characterAtIndex:a] WithCoding:codes ToFile:f];
+        [bw CompressAndWriteCharacter:[s characterAtIndex:a] WithCoding:codes];
     }
+
+    [bw flush];
 
     NSTimeInterval timeInterval = [start timeIntervalSinceNow];
     timeInterval = timeInterval - (timeInterval * 2);
     printInfo(@"Compressed %d Bytes in %f Seconds", OriginalBytes, timeInterval);
 
     return rv;
-}
-
-+(void) CompressAndWriteCharacter:(char) character WithCoding:(EZCodeMap*) codes ToFile:(NSFileHandle*) file {
-    NSString* code = [codes objectForKey:@(character)];
-    
 }
 
 +(NSString*) detectEncoding:(NSData*) data {
@@ -87,6 +85,22 @@
     }
 
     return str;
+}
+
+/*#############################################################*/
+/*###############   Decompression   ###########################*/
+/*#############################################################*/
+
++(NSData*) decopmpressData:(NSData *)data {
+    NSData* rv;
+
+    long OriginalBytes = [data length];
+
+    NSDate* start = [NSDate date];
+
+    return rv;
+
+    
 }
 
 @end
