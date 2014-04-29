@@ -1,0 +1,10 @@
+7bcba78caacb22a84d5905e796f2d3d8 305ab3fa418574ab6830c94cced17c5a ffffffffffffffffffffffffffffffff 0 /Users/jack/Desktop/EZip/build/Release/ezip.dSYM
+141d074b456b3f556049bf9707c5940c 6fd6a0c7efa01dfd2d10ba70913747d4 ffffffffffffffffffffffffffffffff 37116 /Users/jack/Desktop/EZip/build/Release/ezip
+7596b9abaa6de90f5181b5630b665f64 cc564c3a82e472632d67d8e5e2ab4df6 ffffffffffffffffffffffffffffffff 14452 /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZNode.o
+7596b9abaa6d01915181b5630b66570d f8ac047895e4c60acbedcfcca741bcf4 ffffffffffffffffffffffffffffffff 5884 /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/bitset.o
+7596b9abaa6d06fe5181b5630b665ba3 f439448fea1768a34d128c2750e2090c ffffffffffffffffffffffffffffffff 8448 /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/main.o
+7596b9abaa6d09975181b5630b66522e e7d8850032361f0ede70a8cb4b161278 ffffffffffffffffffffffffffffffff 26872 /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZTree.o
+7596b9abaa6d07765181b5630b665061 5ed8feede34a213beebbf175da66edd6 ffffffffffffffffffffffffffffffff 15236 /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezutils.o
+7596b9abaa6d1a205181b5630b665937 eb0ebf8f3370aaae4b03e3a8cecf6ab7 ffffffffffffffffffffffffffffffff 17716 /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZBitWriter.o
+7596b9abaa6d1a795181b5630b665606 f346764fa35ce98fe1982bec46183b4b ffffffffffffffffffffffffffffffff 16856 /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ez.o
+00000000535d6ba70000000000000bb4 7596b9abaa6de9d75181b5630b6657f8 ffffffffffffffffffffffffffffffff 116572 /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch.pch

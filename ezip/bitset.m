@@ -18,10 +18,6 @@
 
 #import "bitset.h"
 
-@implementation EZBitset
-
-@end
-
 void setBit(bitset* set, int i) {
     switch (i) {
         case 0:

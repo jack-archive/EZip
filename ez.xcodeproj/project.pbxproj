@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04602FE6190DC54000B4BC54 /* EZBitWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04602FE5190DC54000B4BC54 /* EZBitWriter.m */; };
+		04602FEC190EEF2700B4BC54 /* libSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04602FEB190EEF2700B4BC54 /* libSystem.dylib */; };
 		04635245190DA548003C8281 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA3F88190C93C300A6C2A9 /* Foundation.framework */; };
 		0463527C190DA630003C8281 /* ez.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463526C190DA630003C8281 /* ez.m */; };
 		04635280190DA630003C8281 /* EZNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04635276190DA630003C8281 /* EZNode.m */; };
@@ -32,6 +33,9 @@
 /* Begin PBXFileReference section */
 		04602FE4190DC54000B4BC54 /* EZBitWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZBitWriter.h; sourceTree = "<group>"; };
 		04602FE5190DC54000B4BC54 /* EZBitWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZBitWriter.m; sourceTree = "<group>"; };
+		04602FE7190EECC400B4BC54 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		04602FE9190EEF0200B4BC54 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		04602FEB190EEF2700B4BC54 /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
 		04635244190DA548003C8281 /* ezip */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ezip; sourceTree = BUILT_PRODUCTS_DIR; };
 		0463526A190DA630003C8281 /* ez.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; name = ez.1; path = ezip/ez.1; sourceTree = SOURCE_ROOT; };
 		0463526B190DA630003C8281 /* ez.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ez.h; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04602FEC190EEF2700B4BC54 /* libSystem.dylib in Frameworks */,
 				04635245190DA548003C8281 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +107,9 @@
 		04CA3F87190C93C300A6C2A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04602FEB190EEF2700B4BC54 /* libSystem.dylib */,
+				04602FE9190EEF0200B4BC54 /* Security.framework */,
+				04602FE7190EECC400B4BC54 /* libcommonCrypto.dylib */,
 				04CA3F88190C93C300A6C2A9 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -190,6 +198,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -199,6 +211,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ezip/ezip-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

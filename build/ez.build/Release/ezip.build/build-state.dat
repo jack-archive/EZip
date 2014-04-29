@@ -1,0 +1,357 @@
+Tezip
+v6
+r1
+cCheck dependencies
+cProcessPCH /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch.pch ezip/ezip-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/ez.o /Users/jack/Desktop/EZip/ezip/ez.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZBitWriter.o /Users/jack/Desktop/EZip/ezip/EZBitWriter.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezutils.o /Users/jack/Desktop/EZip/ezip/ezutils.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZTree.o /Users/jack/Desktop/EZip/ezip/EZTree.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/main.o /Users/jack/Desktop/EZip/ezip/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/bitset.o /Users/jack/Desktop/EZip/ezip/bitset.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZNode.o /Users/jack/Desktop/EZip/ezip/EZNode.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/jack/Desktop/EZip/build/Release/ezip normal x86_64
+cGenerateDSYMFile /Users/jack/Desktop/EZip/build/Release/ezip.dSYM /Users/jack/Desktop/EZip/build/Release/ezip
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c00000000530295C100000000000000AA
+t1392678337
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000531E7351000000000000044C
+t1394504529
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531E735100000000000001DE
+t1394504529
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000531E735700000000000C9E38
+t1394504535
+s826936
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000531E73890000000000000ADC
+t1394504585
+s2780
+
+N/Users/jack/Desktop/EZip/build/Release/ezip
+t1398642886
+s37116
+
+N/Users/jack/Desktop/EZip/build/Release/ezip.dSYM
+t2
+s0
+
+N/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZBitWriter.o
+t1398642886
+s17716
+
+N/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZNode.o
+t1398642886
+s14452
+
+N/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZTree.o
+t1398642886
+s26872
+
+N/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/bitset.o
+t1398642886
+s5884
+
+N/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ez.o
+t1398642886
+s16856
+
+N/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezip.LinkFileList
+c00000000535D98C50000000000000276
+t1398642885
+s630
+
+N/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezutils.o
+t1398642886
+s15236
+
+N/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/main.o
+t1398642886
+s8448
+
+N/Users/jack/Desktop/EZip/ezip/EZBitWriter.m
+c00000000535D9850000000000000057B
+t1398642768
+s1403
+
+N/Users/jack/Desktop/EZip/ezip/EZNode.m
+c00000000535D6B7F0000000000000328
+t1398631295
+s808
+
+N/Users/jack/Desktop/EZip/ezip/EZTree.m
+c00000000535D8BE70000000000000E62
+t1398639591
+s3682
+
+N/Users/jack/Desktop/EZip/ezip/bitset.m
+c00000000535D83E10000000000000B41
+t1398637537
+s2881
+
+N/Users/jack/Desktop/EZip/ezip/ez.m
+c00000000535D98090000000000000A4A
+t1398642697
+s2634
+
+N/Users/jack/Desktop/EZip/ezip/ezip-Prefix.pch
+c00000000535D6B7F00000000000000B6
+t1398631295
+s182
+
+N/Users/jack/Desktop/EZip/ezip/ezutils.m
+c00000000535D85060000000000000C2D
+t1398637830
+s3117
+
+N/Users/jack/Desktop/EZip/ezip/main.m
+c00000000535D848E00000000000007EF
+t1398637710
+s2031
+
+N/var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch.pch
+t1398642886
+s116572
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb7b23045d00db941^dfdd3a45d00db941^---0#1#1#--18"Check dependencies36"6F070268-9441-4729-9B37-5934C68F9A6E-
+
+CCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZBitWriter.o /Users/jack/Desktop/EZip/ezip/EZBitWriter.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420335686.536765
+e420335686.595068
+r1
+xCompileC
+xbuild/ez.build/Release/ezip.build/Objects-normal/x86_64/EZBitWriter.o
+x/Users/jack/Desktop/EZip/ezip/EZBitWriter.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jack/Desktop/EZip/ezip/EZBitWriter.m
+d/Users/jack/Desktop/EZip/ezip/EZBitWriter.h
+d/Users/jack/Desktop/EZip/ezip/ez.h
+d/Users/jack/Desktop/EZip/ezip/bitset.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Compile /Users/jack/Desktop/EZip/ezip/EZBitWriter.m183"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZBitWriter.o [1mezip/EZBitWriter.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler687a8946d00db941^0a859846d00db941^---0#0#1#-19%DVTDocumentLocation2@50"file:///Users/jack/Desktop/EZip/ezip/EZBitWriter.m0000000000000000^2806"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZBitWriter.o [1mezip/EZBitWriter.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jack/Desktop/EZip    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=191 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-generated-files.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-own-target-headers.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-all-target-headers.hmap -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-project-headers.hmap -I/Users/jack/Desktop/EZip/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources/x86_64 -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources -F/Users/jack/Desktop/EZip/build/Release -include /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch -MMD -MT dependencies -MF /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZBitWriter.d --serialize-diagnostics /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZBitWriter.dia -c /Users/jack/Desktop/EZip/ezip/EZBitWriter.m -o /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZBitWriter.o36"B55F159A-9F60-4A9F-9A7A-7EF96A67F407-
+bC37EF93B-920D-40B1-AE84-77509FF230C2
+
+CCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZNode.o /Users/jack/Desktop/EZip/ezip/EZNode.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420335686.602195
+e420335686.645020
+r1
+xCompileC
+xbuild/ez.build/Release/ezip.build/Objects-normal/x86_64/EZNode.o
+x/Users/jack/Desktop/EZip/ezip/EZNode.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jack/Desktop/EZip/ezip/EZNode.m
+d/Users/jack/Desktop/EZip/ezip/EZNode.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Compile /Users/jack/Desktop/EZip/ezip/EZNode.m173"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZNode.o [1mezip/EZNode.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler5f419a46d00db941^5934a546d00db941^---0#0#1#-19%DVTDocumentLocation2@45"file:///Users/jack/Desktop/EZip/ezip/EZNode.m0000000000000000^2776"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZNode.o [1mezip/EZNode.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jack/Desktop/EZip    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=191 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-generated-files.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-own-target-headers.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-all-target-headers.hmap -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-project-headers.hmap -I/Users/jack/Desktop/EZip/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources/x86_64 -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources -F/Users/jack/Desktop/EZip/build/Release -include /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch -MMD -MT dependencies -MF /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZNode.d --serialize-diagnostics /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZNode.dia -c /Users/jack/Desktop/EZip/ezip/EZNode.m -o /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZNode.o36"914C8DBA-41E1-455E-AC0E-1491411085A6-
+bC37EF93B-920D-40B1-AE84-77509FF230C2
+
+CCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZTree.o /Users/jack/Desktop/EZip/ezip/EZTree.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420335686.538030
+e420335686.609075
+r1
+xCompileC
+xbuild/ez.build/Release/ezip.build/Objects-normal/x86_64/EZTree.o
+x/Users/jack/Desktop/EZip/ezip/EZTree.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jack/Desktop/EZip/ezip/EZTree.m
+d/Users/jack/Desktop/EZip/ezip/EZTree.h
+d/Users/jack/Desktop/EZip/ezip/EZNode.h
+d/Users/jack/Desktop/EZip/ezip/ez.h
+d/Users/jack/Desktop/EZip/ezip/ezutils.h
+d/Users/jack/Desktop/EZip/ezip/bitset.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Compile /Users/jack/Desktop/EZip/ezip/EZTree.m173"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZTree.o [1mezip/EZTree.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerb0ca8946d00db941^0ff19b46d00db941^---0#0#1#-19%DVTDocumentLocation2@45"file:///Users/jack/Desktop/EZip/ezip/EZTree.m0000000000000000^2776"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZTree.o [1mezip/EZTree.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jack/Desktop/EZip    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=191 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-generated-files.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-own-target-headers.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-all-target-headers.hmap -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-project-headers.hmap -I/Users/jack/Desktop/EZip/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources/x86_64 -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources -F/Users/jack/Desktop/EZip/build/Release -include /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch -MMD -MT dependencies -MF /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZTree.d --serialize-diagnostics /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZTree.dia -c /Users/jack/Desktop/EZip/ezip/EZTree.m -o /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZTree.o36"41E2A2E6-7352-4051-947E-571688EACE0D-
+bC37EF93B-920D-40B1-AE84-77509FF230C2
+
+CCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/bitset.o /Users/jack/Desktop/EZip/ezip/bitset.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420335686.597588
+e420335686.639574
+r1
+xCompileC
+xbuild/ez.build/Release/ezip.build/Objects-normal/x86_64/bitset.o
+x/Users/jack/Desktop/EZip/ezip/bitset.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jack/Desktop/EZip/ezip/bitset.m
+d/Users/jack/Desktop/EZip/ezip/bitset.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Compile /Users/jack/Desktop/EZip/ezip/bitset.m173"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/bitset.o [1mezip/bitset.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilere90b9946d00db941^3222a546d00db941^---0#0#1#-19%DVTDocumentLocation2@45"file:///Users/jack/Desktop/EZip/ezip/bitset.m0000000000000000^2776"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/bitset.o [1mezip/bitset.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jack/Desktop/EZip    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=191 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-generated-files.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-own-target-headers.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-all-target-headers.hmap -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-project-headers.hmap -I/Users/jack/Desktop/EZip/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources/x86_64 -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources -F/Users/jack/Desktop/EZip/build/Release -include /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch -MMD -MT dependencies -MF /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/bitset.d --serialize-diagnostics /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/bitset.dia -c /Users/jack/Desktop/EZip/ezip/bitset.m -o /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/bitset.o36"63C25E48-8629-49BC-97A2-40FB65985F8E-
+bC37EF93B-920D-40B1-AE84-77509FF230C2
+
+CCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/ez.o /Users/jack/Desktop/EZip/ezip/ez.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420335686.536588
+e420335686.597388
+r1
+xCompileC
+xbuild/ez.build/Release/ezip.build/Objects-normal/x86_64/ez.o
+x/Users/jack/Desktop/EZip/ezip/ez.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jack/Desktop/EZip/ezip/ez.m
+d/Users/jack/Desktop/EZip/ezip/ez.h
+d/Users/jack/Desktop/EZip/ezip/ezutils.h
+d/Users/jack/Desktop/EZip/ezip/EZTree.h
+d/Users/jack/Desktop/EZip/ezip/EZNode.h
+d/Users/jack/Desktop/EZip/ezip/EZBitWriter.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Compile /Users/jack/Desktop/EZip/ezip/ez.m165"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/ez.o [1mezip/ez.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler3f708946d00db941^b5179946d00db941^---0#0#1#-19%DVTDocumentLocation2@41"file:///Users/jack/Desktop/EZip/ezip/ez.m0000000000000000^2752"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/ez.o [1mezip/ez.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jack/Desktop/EZip    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=191 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-generated-files.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-own-target-headers.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-all-target-headers.hmap -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-project-headers.hmap -I/Users/jack/Desktop/EZip/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources/x86_64 -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources -F/Users/jack/Desktop/EZip/build/Release -include /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch -MMD -MT dependencies -MF /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ez.d --serialize-diagnostics /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ez.dia -c /Users/jack/Desktop/EZip/ezip/ez.m -o /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ez.o36"401DF21A-905D-416D-A216-272B72190FA6-
+bC37EF93B-920D-40B1-AE84-77509FF230C2
+
+CCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezutils.o /Users/jack/Desktop/EZip/ezip/ezutils.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420335686.536996
+e420335686.601972
+r1
+xCompileC
+xbuild/ez.build/Release/ezip.build/Objects-normal/x86_64/ezutils.o
+x/Users/jack/Desktop/EZip/ezip/ezutils.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jack/Desktop/EZip/ezip/ezutils.m
+d/Users/jack/Desktop/EZip/ezip/ezutils.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Compile /Users/jack/Desktop/EZip/ezip/ezutils.m175"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezutils.o [1mezip/ezutils.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler05898946d00db941^d42a9a46d00db941^---0#0#1#-19%DVTDocumentLocation2@46"file:///Users/jack/Desktop/EZip/ezip/ezutils.m0000000000000000^2782"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezutils.o [1mezip/ezutils.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jack/Desktop/EZip    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=191 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-generated-files.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-own-target-headers.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-all-target-headers.hmap -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-project-headers.hmap -I/Users/jack/Desktop/EZip/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources/x86_64 -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources -F/Users/jack/Desktop/EZip/build/Release -include /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch -MMD -MT dependencies -MF /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezutils.d --serialize-diagnostics /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezutils.dia -c /Users/jack/Desktop/EZip/ezip/ezutils.m -o /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezutils.o36"FB4DA019-BE99-44CA-B07A-251276311639-
+bC37EF93B-920D-40B1-AE84-77509FF230C2
+
+CCompileC build/ez.build/Release/ezip.build/Objects-normal/x86_64/main.o /Users/jack/Desktop/EZip/ezip/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420335686.595318
+e420335686.637859
+r1
+xCompileC
+xbuild/ez.build/Release/ezip.build/Objects-normal/x86_64/main.o
+x/Users/jack/Desktop/EZip/ezip/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jack/Desktop/EZip/ezip/main.m
+d/Users/jack/Desktop/EZip/ezip/ezutils.h
+d/Users/jack/Desktop/EZip/ezip/ez.h
+d/Users/jack/Desktop/EZip/ezip/EZTree.h
+d/Users/jack/Desktop/EZip/ezip/EZNode.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Compile /Users/jack/Desktop/EZip/ezip/main.m169"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/main.o [1mezip/main.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerab779846d00db941^b75ea346d00db941^---0#0#1#-19%DVTDocumentLocation2@43"file:///Users/jack/Desktop/EZip/ezip/main.m0000000000000000^2764"[1mCompileC[0m build/ez.build/Release/ezip.build/Objects-normal/x86_64/main.o [1mezip/main.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jack/Desktop/EZip    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=191 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-generated-files.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-own-target-headers.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-all-target-headers.hmap -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-project-headers.hmap -I/Users/jack/Desktop/EZip/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources/x86_64 -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources -F/Users/jack/Desktop/EZip/build/Release -include /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch -MMD -MT dependencies -MF /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/main.dia -c /Users/jack/Desktop/EZip/ezip/main.m -o /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/main.o36"71AF3C13-5563-42CC-BC8A-83FFFE21BC87-
+bC37EF93B-920D-40B1-AE84-77509FF230C2
+
+CGenerateDSYMFile /Users/jack/Desktop/EZip/build/Release/ezip.dSYM /Users/jack/Desktop/EZip/build/Release/ezip
+s420335686.676747
+e420335686.684125
+r1
+xGenerateDSYMFile
+x/Users/jack/Desktop/EZip/build/Release/ezip.dSYM
+x/Users/jack/Desktop/EZip/build/Release/ezip
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Generate /Users/jack/Desktop/EZip/build/Release/ezip.dSYM75"[1mGenerateDSYMFile[0m [1mbuild/Release/ezip.dSYM[0m build/Release/ezip7349ad46d00db941^6823af46d00db941^---0#0#1#-19%DVTDocumentLocation2@55"file:///Users/jack/Desktop/EZip/build/Release/ezip.dSYM00348c2ddfffdf42^304"[1mGenerateDSYMFile[0m [1mbuild/Release/ezip.dSYM[0m build/Release/ezip    cd /Users/jack/Desktop/EZip    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/jack/Desktop/EZip/build/Release/ezip -o /Users/jack/Desktop/EZip/build/Release/ezip.dSYM36"A7165107-58EF-42EA-AD6F-208C62B00D03-
+bC37EF93B-920D-40B1-AE84-77509FF230C2
+
+CLd /Users/jack/Desktop/EZip/build/Release/ezip normal x86_64
+s420335686.645768
+e420335686.676105
+r1
+xLd
+x/Users/jack/Desktop/EZip/build/Release/ezip
+xnormal
+xx86_64
+d/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezip.LinkFileList
+d/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ez.o
+d/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZBitWriter.o
+d/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezutils.o
+d/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZTree.o
+d/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/main.o
+d/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/bitset.o
+d/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/EZNode.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOKit.framework/IOKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOSurface.framework/IOSurface
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/DiskArbitration.framework/DiskArbitration
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Link /Users/jack/Desktop/EZip/build/Release/ezip43"[1mLd[0m build/Release/ezip normal x86_64d55da546d00db941^f015ad46d00db941^---0#0#1#--794"[1mLd[0m build/Release/ezip normal x86_64    cd /Users/jack/Desktop/EZip    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/jack/Desktop/EZip/build/Release -F/Users/jack/Desktop/EZip/build/Release -filelist /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezip.LinkFileList -mmacosx-version-min=10.9 -fobjc-arc -fobjc-link-runtime -framework Foundation -Xlinker -dependency_info -Xlinker /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/Objects-normal/x86_64/ezip_dependency_info.dat -o /Users/jack/Desktop/EZip/build/Release/ezip36"88768C59-91B3-417E-BAEB-DFB3B8FBA22E-
+bC37EF93B-920D-40B1-AE84-77509FF230C2
+
+CProcessPCH /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch.pch ezip/ezip-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420335685.232297
+e420335686.536014
+r1
+xProcessPCH
+x/var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch.pch
+xezip/ezip-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jack/Desktop/EZip/ezip/ezip-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection31"Precompile ezip/ezip-Prefix.pch286"[1mProcessPCH[0m /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch.pch ezip/ezip-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compileree933b45d00db941^e3378946d00db941^---0#0#1#-19%DVTDocumentLocation2@52"file:///Users/jack/Desktop/EZip/ezip/ezip-Prefix.pch0000000000000000^2978"[1mProcessPCH[0m /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch.pch ezip/ezip-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jack/Desktop/EZip    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=191 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-generated-files.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-own-target-headers.hmap -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-all-target-headers.hmap -iquote /Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/ezip-project-headers.hmap -I/Users/jack/Desktop/EZip/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources/x86_64 -I/Users/jack/Desktop/EZip/build/ez.build/Release/ezip.build/DerivedSources -F/Users/jack/Desktop/EZip/build/Release --serialize-diagnostics /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch.d -c /Users/jack/Desktop/EZip/ezip/ezip-Prefix.pch -o /var/folders/k7/9gdspjws18bdmnxyzfjz0g5h0000gq/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/ezip-Prefix-gxxcolvolxbazbhhvppzmudaiyin/ezip-Prefix.pch.pch36"06A47C84-703F-42ED-B3F2-3E5E5ED59AD2-
+bC37EF93B-920D-40B1-AE84-77509FF230C2
+

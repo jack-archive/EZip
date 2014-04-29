@@ -22,6 +22,7 @@ typedef NSMapTable EZCodeMap;
 
 @interface ez : NSObject
 
-+(NSData*) compressData:(NSData*) data;
++(void) compressFile:(NSString*) path;
 +(NSData*) decopmpressData:(NSData*) data;
++(NSString*) getSHAFromFile:(NSString*) path;
 @end

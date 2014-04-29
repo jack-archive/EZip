@@ -73,7 +73,15 @@
 
         [arr addObject:node3];
 
+        /*
+        for (int a = 0; a < arr.count; a++) {
+            if (((EZNode*)arr[a]).count > node3.count) {
+                [arr insertObject:node3 atIndex:a - 1];
+            }
+        }
+        */
         [EZTree sortEZNodeArray:arr];
+        
     }
     self.Nodes = arr;
     self.modified = NO;
@@ -87,12 +95,10 @@
 -(void) GenerateCodes:(EZNode*) node toMap:(EZCodeMap*)map currentCode:(NSString*) code {
     if (self.modified) {
         [self constructTree];
-
     }
 
     if (node.isLeaf) {
         [map setObject:code forKey:@(node.charc)];
-        print(@"%c, %@", node.charc, code);
     } else {
         if (node.leftChild) {
             [self GenerateCodes:node.leftChild toMap:map currentCode:[code stringByAppendingString:@"0"]];
@@ -102,7 +108,7 @@
             [self GenerateCodes:node.rightChild toMap:map currentCode:[code stringByAppendingString:@"1"]];
         }
     }
-
+    self.Codes = map;
 }
 
 +(NSArray*) sortEZNodeArray:(NSArray*) arr {

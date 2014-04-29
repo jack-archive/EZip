@@ -27,7 +27,7 @@
 
 /*  Tells the program when the node array has been modified */
 @property (nonatomic, readonly) BOOL modified;
-@property (nonatomic, readonly, strong) NSMapTable* Codes;
+@property (nonatomic, readonly, strong) EZCodeMap* Codes;
 
 -(void) constructTree;
 -(void) addNode:(EZNode*) node;

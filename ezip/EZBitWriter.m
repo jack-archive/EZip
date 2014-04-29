@@ -20,6 +20,8 @@
 #import "ez.h"
 #import "bitset.h"
 #import "ezutils.h"
+#import "EZTree.h"
+#import "EZNode.h"
 
 @interface EZBitWriter ()
 
@@ -49,6 +51,7 @@
         }
         self.current = [self.current stringByAppendingFormat:@"%c", [code characterAtIndex:a]];
         self.position++;
+        //print(@"%@\n", self.current);
     }
 }
 
@@ -63,12 +66,24 @@
             [NSException raise:@"String Error" format:@"String Does Not Contain All Ones And Zeroes"];
         }
     }
-    fprintf(self.file, "%d", w);
+    fprintf(self.file, "%c", w);
 }
 
 -(void) flush {
     [self WriteString:self.current];
     self.position = 0;
+}
+
+-(void) WriteHeader:(EZTree*) tree sha:(NSString*) sha {
+    NSString* header = [NSString stringWithFormat:@"@HEAD\nEZV=%s\nSHA=%@\n", __EZ_VERSION__, sha];
+
+    for (int a = 0; a < tree.BaseNodes.count; a++) {
+        header = [header stringByAppendingFormat:@"%c = %@", ((EZNode*)tree.BaseNodes[a]).charc, [tree.Codes objectForKey:@(((EZNode*)tree.BaseNodes[a]).charc)]];
+    }
+
+    header = [header stringByAppendingString:@"\n@END\n"];
+
+    fprintf(self.file, "%s", [header UTF8String]);
 }
 
 @end

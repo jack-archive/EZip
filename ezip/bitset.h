@@ -61,7 +61,3 @@ void setBit(bitset* set, int i);
 void unsetBit(bitset* set, int i);
 
 #endif
-
-@interface EZBitset : NSObject
-
-@end

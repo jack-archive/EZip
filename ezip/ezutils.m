@@ -30,9 +30,11 @@ void print_core(BOOL err, NSString* x, va_list f) {
 
     NSString* s = [[NSString alloc] initWithFormat:x arguments:f];
     if (err) {
-        fprintf(stderr, "%s\n", [s UTF8String]);
+        fprintf(stderr, "%s", [s UTF8String]);
+        fflush(stderr);
     } else {
-        printf("%s\n", [s UTF8String]);
+        printf("%s", [s UTF8String]);
+        fflush(stdout);
     }
 }
 

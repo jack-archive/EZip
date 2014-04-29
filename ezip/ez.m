@@ -20,15 +20,22 @@
 #import "ezutils.h"
 #import "EZTree.h"
 #import "EZBitWriter.h"
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation ez
 
-+(NSData*) compressData:(NSData*)data {
-    NSData* rv;
++(void) compressFile:(NSString*) path {
+    NSDate* start = [NSDate date];
+
+    printInfo(@"Compressing file at %@\n", path);
+    printf("\tIndexing File... ");
+    fflush(stdout);
+
+    NSString* sha = [ez getSHAFromFile:path];
+
+    NSData* data = [NSData dataWithContentsOfFile:path];
 
     long OriginalBytes = [data length];
-
-    NSDate* start = [NSDate date];
 
     NSString* s = [ez detectEncoding:data];
 
@@ -47,15 +54,33 @@
         echar.charc = [ch integerValue];
         [tree addNode:echar];
     }
+    NSTimeInterval timeInterval = [start timeIntervalSinceNow];
+    timeInterval = timeInterval - (timeInterval * 2);
+    printf("%f\n", timeInterval);
 
-    print(@"\tBuilding Tree...");
+    NSDate* td = [NSDate date];
+    printf("\tBuilding Tree... ");
+    fflush(stdout);
     [tree constructTree];
+    timeInterval = [td timeIntervalSinceNow];
+    timeInterval = timeInterval - (timeInterval * 2);
+    printf("%f\n", timeInterval);
 
-    print(@"\tGenerating Codes...");
+    td = [NSDate date];
+    printf("\tGenerating Codes... ");
+    fflush(stdout);
     EZCodeMap* codes = [NSMapTable strongToStrongObjectsMapTable];
     [tree GenerateCodes:((EZNode*) tree.Nodes[0]) toMap:codes currentCode:@""];
+    timeInterval = [td timeIntervalSinceNow];
+    timeInterval = timeInterval - (timeInterval * 2);
+    printf("%f\n", timeInterval);
 
+    td = [NSDate date];
+    printf("\tCompressing... ");
+    fflush(stdout);
     EZBitWriter* bw = [[EZBitWriter alloc] initWithFile:@"./test.ez"];
+
+    [bw WriteHeader:tree sha:sha];
 
     for (int a = 0; a < s.length; a++) {
         [bw CompressAndWriteCharacter:[s characterAtIndex:a] WithCoding:codes];
@@ -63,11 +88,13 @@
 
     [bw flush];
 
-    NSTimeInterval timeInterval = [start timeIntervalSinceNow];
+    timeInterval = [td timeIntervalSinceNow];
     timeInterval = timeInterval - (timeInterval * 2);
-    printInfo(@"Compressed %d Bytes in %f Seconds", OriginalBytes, timeInterval);
+    printf("%f\n", timeInterval);
 
-    return rv;
+    timeInterval = [start timeIntervalSinceNow];
+    timeInterval = timeInterval - (timeInterval * 2);
+    printInfo(@"Compressed %d Bytes in %f Seconds\n", OriginalBytes, timeInterval);
 }
 
 +(NSString*) detectEncoding:(NSData*) data {
@@ -78,7 +105,7 @@
         if (!str) {
             str = [[NSString alloc] initWithData:data encoding:NSUTF16StringEncoding];
             if (!str) {
-                printErr(@"Unable To Detect File Encoding");
+                printErr(@"Unable To Detect File Encoding\n");
                 exit(1);
             }
         }
@@ -101,6 +128,30 @@
     return rv;
 
     
+}
+
++(NSString*) getSHAFromFile:(NSString*) path {
+    NSTask* sha = [[NSTask alloc] init];
+    [sha setLaunchPath:@"/usr/bin/shasum"];
+    [sha setArguments:@[@"--algorithm", @"256", path]];
+
+    NSFileManager* fm = [[NSFileManager alloc] init];
+    [sha setCurrentDirectoryPath:[fm currentDirectoryPath]];
+
+    NSPipe* pipe = [NSPipe pipe];
+    [sha setStandardOutput:pipe];
+
+    [sha launch];
+
+    NSFileHandle* file = [pipe fileHandleForReading];
+    NSData* data = [file readDataToEndOfFile];
+
+    NSString* rv = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+
+    NSArray* x = [rv componentsSeparatedByString:@"  "];
+    rv = ((NSString*) x[0]);
+
+    return rv;
 }
 
 @end

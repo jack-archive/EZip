@@ -18,6 +18,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ez.h"
+#import "EZTree.h"
 
 @interface EZBitWriter : NSObject
 
@@ -29,5 +30,6 @@
 
 -(void) CompressAndWriteCharacter:(char) character WithCoding:(EZCodeMap*) codes;
 -(void) flush;
+-(void) WriteHeader:(EZTree*) tree sha:(NSString*) sha;
 
 @end

@@ -46,13 +46,8 @@ int main(int argc, const char * argv[])
                 printErr(@"-a Requires An Argument");
                 exit(1);
             }
-            
-            print(@"Compressing file at %@ ", [NSString stringWithUTF8String:argv[2]]);
-            print(@"\tIndexing File...");
 
-            NSData* data = [NSData dataWithContentsOfFile:[NSString stringWithUTF8String:argv[2]]];
-
-            [ez compressData:data];
+            [ez compressFile:[NSString stringWithUTF8String:argv[2]]];
 
         } else if ([@"-x" isEqualToString:arg]) {
             // Extract Archive
