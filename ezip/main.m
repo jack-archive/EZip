@@ -19,6 +19,7 @@
 #import <Foundation/Foundation.h>
 #import "ez.h"
 #import "EZTree.h"
+#import "EZRandom.h"
 
 int main(int argc, const char * argv[])
 {
@@ -28,6 +29,12 @@ int main(int argc, const char * argv[])
         if (argc < 2) {
             printUsage();
             exit(1);
+        }
+
+        EZRandom* rand = [[EZRandom alloc] initWithSeed:100123112];
+
+        for (int a = 0; a < 10000000; a++) {
+            print(@"%d\n", [rand rand]);
         }
 
         NSString* arg = [NSString stringWithUTF8String:argv[1]];
@@ -52,7 +59,7 @@ int main(int argc, const char * argv[])
             // Extract Archive
 
             if (argc < 3) {
-                printErr(@"-a Requires An Argument");
+                printErr(@"-x Requires An Argument");
                 exit(1);
             }
 

@@ -17,6 +17,7 @@
 		04FE34771911A2070037CAE4 /* EZSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE34761911A2070037CAE4 /* EZSecurity.m */; };
 		04FE347B1911AD620037CAE4 /* EZBitset.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE347A1911AD620037CAE4 /* EZBitset.m */; };
 		04FE347E1911D6530037CAE4 /* EZBitReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE347D1911D6530037CAE4 /* EZBitReader.m */; };
+		04FE34811912F48A0037CAE4 /* EZRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE34801912F48A0037CAE4 /* EZRandom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +57,8 @@
 		04FE347A1911AD620037CAE4 /* EZBitset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZBitset.m; sourceTree = "<group>"; };
 		04FE347C1911D6530037CAE4 /* EZBitReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZBitReader.h; sourceTree = "<group>"; };
 		04FE347D1911D6530037CAE4 /* EZBitReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZBitReader.m; sourceTree = "<group>"; };
+		04FE347F1912F48A0037CAE4 /* EZRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZRandom.h; sourceTree = "<group>"; };
+		04FE34801912F48A0037CAE4 /* EZRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZRandom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				0463526C190DA630003C8281 /* ez.m */,
 				04FE34751911A2070037CAE4 /* EZSecurity.h */,
 				04FE34761911A2070037CAE4 /* EZSecurity.m */,
+				04FE347F1912F48A0037CAE4 /* EZRandom.h */,
+				04FE34801912F48A0037CAE4 /* EZRandom.m */,
 				04FE34791911AD620037CAE4 /* EZBitset.h */,
 				04FE347A1911AD620037CAE4 /* EZBitset.m */,
 				0463527B190DA630003C8281 /* main.m */,
@@ -187,6 +192,7 @@
 				04FE3474191077F20037CAE4 /* EZOperationTimer.m in Sources */,
 				0463527C190DA630003C8281 /* ez.m in Sources */,
 				04FE347E1911D6530037CAE4 /* EZBitReader.m in Sources */,
+				04FE34811912F48A0037CAE4 /* EZRandom.m in Sources */,
 				04602FE6190DC54000B4BC54 /* EZBitWriter.m in Sources */,
 				04635281190DA630003C8281 /* EZTree.m in Sources */,
 				04635283190DA630003C8281 /* main.m in Sources */,

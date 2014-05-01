@@ -20,11 +20,12 @@
 #import <Foundation/Foundation.h>
 
 typedef long int EZCryptoSeed;
+typedef NSArray EZOTPKey;
 
 #ifndef ez_bitset_h
 #define ez_bitset_h
 
-int RandomNumGenWithSeed(EZCryptoSeed seed);
-
 
 #endif
+
+

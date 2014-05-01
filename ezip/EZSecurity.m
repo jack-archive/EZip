@@ -19,10 +19,14 @@
 
 #import "EZSecurity.h"
 
-int RandomNumGenWithSeed(EZCryptoSeed seed) {
-
-
-
-
-    return 0;
+NSArray* encryptOneTimePad(EZOTPKey* key, NSString* message) {
+    NSArray* rv = [[NSArray alloc] init];
+    return rv;
 }
+
+EZOTPKey* generateOTPKeyFromSeed(EZCryptoSeed* seed) {
+    EZOTPKey* key = @[];
+    return key;
+}
+
+

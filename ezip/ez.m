@@ -158,8 +158,8 @@
     }
 
     EZBitReader* reader = [[EZBitReader alloc] initWithPath:path];
-    
 
+    print(@"%d", [reader readChar]);
 
     printInfo(@"Decompressed %d Bytes in %f Seconds\n", OriginalBytes, [start time]);
 }

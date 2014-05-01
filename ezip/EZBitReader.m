@@ -20,7 +20,7 @@
 
 @interface EZBitReader ()
 
-@property (nonatomic, readwrite) FILE* file;
+@property (nonatomic, readwrite) NSFileHandle* file;
 
 @end
 
@@ -28,12 +28,15 @@
 
 -(instancetype) initWithPath:(NSString*) path {
     self = [super init];
-    self.file = fopen([path UTF8String], "r");
+    self.file = [NSFileHandle fileHandleForReadingAtPath:path];
     return self;
 }
 
--(void) flush {
-    fflush(self.file);
+-(int) readChar {
+    NSData* data = [self.file readDataOfLength:1];
+    int a;
+    [data getBytes:&a];
+    return a;
 }
 
 @end

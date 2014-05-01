@@ -21,9 +21,9 @@
 
 @interface EZBitReader : NSObject
 
-@property (nonatomic, readonly) FILE* file;
+@property (nonatomic, readonly) NSFileHandle* file;
 
--(void) flush;
 -(instancetype) initWithPath:(NSString*) path;
+-(int) readChar;
 
 @end
