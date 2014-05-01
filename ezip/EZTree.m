@@ -19,8 +19,7 @@
 #import "EZTree.h"
 #import "EZNode.h"
 #import "ez.h"
-#import "ezutils.h"
-#import "bitset.h"
+#import "EZBitset.h"
 
 @interface EZTree()
 

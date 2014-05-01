@@ -16,7 +16,7 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#import "bitset.h"
+#import "EZBitset.h"
 
 void setBit(bitset* set, int i) {
     switch (i) {

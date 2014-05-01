@@ -17,7 +17,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ezutils.h"
 #import "ez.h"
 #import "EZTree.h"
 
@@ -51,6 +50,14 @@ int main(int argc, const char * argv[])
 
         } else if ([@"-x" isEqualToString:arg]) {
             // Extract Archive
+
+            if (argc < 3) {
+                printErr(@"-a Requires An Argument");
+                exit(1);
+            }
+
+            [ez decompressFile:[NSString stringWithUTF8String:argv[2]]];
+
         } else {
             printErr(@"Arguments Are Invalid");
         }

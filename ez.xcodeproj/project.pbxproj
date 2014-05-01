@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		04602FE6190DC54000B4BC54 /* EZBitWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04602FE5190DC54000B4BC54 /* EZBitWriter.m */; };
-		04602FEC190EEF2700B4BC54 /* libSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04602FEB190EEF2700B4BC54 /* libSystem.dylib */; };
 		04635245190DA548003C8281 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA3F88190C93C300A6C2A9 /* Foundation.framework */; };
 		0463527C190DA630003C8281 /* ez.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463526C190DA630003C8281 /* ez.m */; };
 		04635280190DA630003C8281 /* EZNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04635276190DA630003C8281 /* EZNode.m */; };
 		04635281190DA630003C8281 /* EZTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 04635278190DA630003C8281 /* EZTree.m */; };
-		04635282190DA630003C8281 /* ezutils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463527A190DA630003C8281 /* ezutils.m */; };
 		04635283190DA630003C8281 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463527B190DA630003C8281 /* main.m */; };
-		048BCD2F190DBB4D00ADBCCC /* bitset.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCD2E190DBB4D00ADBCCC /* bitset.m */; };
+		04FE3474191077F20037CAE4 /* EZOperationTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE3473191077F20037CAE4 /* EZOperationTimer.m */; };
+		04FE34771911A2070037CAE4 /* EZSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE34761911A2070037CAE4 /* EZSecurity.m */; };
+		04FE347B1911AD620037CAE4 /* EZBitset.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE347A1911AD620037CAE4 /* EZBitset.m */; };
+		04FE347E1911D6530037CAE4 /* EZBitReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE347D1911D6530037CAE4 /* EZBitReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,12 +46,16 @@
 		04635276190DA630003C8281 /* EZNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZNode.m; sourceTree = "<group>"; };
 		04635277190DA630003C8281 /* EZTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZTree.h; sourceTree = "<group>"; };
 		04635278190DA630003C8281 /* EZTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZTree.m; sourceTree = "<group>"; };
-		04635279190DA630003C8281 /* ezutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ezutils.h; sourceTree = "<group>"; };
-		0463527A190DA630003C8281 /* ezutils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ezutils.m; sourceTree = "<group>"; };
 		0463527B190DA630003C8281 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		048BCD2D190DBB4D00ADBCCC /* bitset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitset.h; sourceTree = "<group>"; };
-		048BCD2E190DBB4D00ADBCCC /* bitset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bitset.m; sourceTree = "<group>"; };
 		04CA3F88190C93C300A6C2A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04FE3472191077F20037CAE4 /* EZOperationTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZOperationTimer.h; sourceTree = "<group>"; };
+		04FE3473191077F20037CAE4 /* EZOperationTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZOperationTimer.m; sourceTree = "<group>"; };
+		04FE34751911A2070037CAE4 /* EZSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZSecurity.h; sourceTree = "<group>"; };
+		04FE34761911A2070037CAE4 /* EZSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZSecurity.m; sourceTree = "<group>"; };
+		04FE34791911AD620037CAE4 /* EZBitset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZBitset.h; sourceTree = "<group>"; };
+		04FE347A1911AD620037CAE4 /* EZBitset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZBitset.m; sourceTree = "<group>"; };
+		04FE347C1911D6530037CAE4 /* EZBitReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZBitReader.h; sourceTree = "<group>"; };
+		04FE347D1911D6530037CAE4 /* EZBitReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZBitReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04602FEC190EEF2700B4BC54 /* libSystem.dylib in Frameworks */,
 				04635245190DA548003C8281 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,14 +77,18 @@
 				04635276190DA630003C8281 /* EZNode.m */,
 				04635277190DA630003C8281 /* EZTree.h */,
 				04635278190DA630003C8281 /* EZTree.m */,
-				048BCD2D190DBB4D00ADBCCC /* bitset.h */,
-				048BCD2E190DBB4D00ADBCCC /* bitset.m */,
-				0463526B190DA630003C8281 /* ez.h */,
-				0463526C190DA630003C8281 /* ez.m */,
 				04602FE4190DC54000B4BC54 /* EZBitWriter.h */,
 				04602FE5190DC54000B4BC54 /* EZBitWriter.m */,
-				04635279190DA630003C8281 /* ezutils.h */,
-				0463527A190DA630003C8281 /* ezutils.m */,
+				04FE347C1911D6530037CAE4 /* EZBitReader.h */,
+				04FE347D1911D6530037CAE4 /* EZBitReader.m */,
+				04FE3472191077F20037CAE4 /* EZOperationTimer.h */,
+				04FE3473191077F20037CAE4 /* EZOperationTimer.m */,
+				0463526B190DA630003C8281 /* ez.h */,
+				0463526C190DA630003C8281 /* ez.m */,
+				04FE34751911A2070037CAE4 /* EZSecurity.h */,
+				04FE34761911A2070037CAE4 /* EZSecurity.m */,
+				04FE34791911AD620037CAE4 /* EZBitset.h */,
+				04FE347A1911AD620037CAE4 /* EZBitset.m */,
 				0463527B190DA630003C8281 /* main.m */,
 				04CA3F8D190C93C300A6C2A9 /* Supporting Files */,
 			);
@@ -176,13 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FE3474191077F20037CAE4 /* EZOperationTimer.m in Sources */,
 				0463527C190DA630003C8281 /* ez.m in Sources */,
+				04FE347E1911D6530037CAE4 /* EZBitReader.m in Sources */,
 				04602FE6190DC54000B4BC54 /* EZBitWriter.m in Sources */,
-				04635282190DA630003C8281 /* ezutils.m in Sources */,
 				04635281190DA630003C8281 /* EZTree.m in Sources */,
 				04635283190DA630003C8281 /* main.m in Sources */,
-				048BCD2F190DBB4D00ADBCCC /* bitset.m in Sources */,
+				04FE34771911A2070037CAE4 /* EZSecurity.m in Sources */,
 				04635280190DA630003C8281 /* EZNode.m in Sources */,
+				04FE347B1911AD620037CAE4 /* EZBitset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

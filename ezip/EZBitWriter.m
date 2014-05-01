@@ -18,8 +18,7 @@
 
 #import "EZBitWriter.h"
 #import "ez.h"
-#import "bitset.h"
-#import "ezutils.h"
+#import "EZBitset.h"
 #import "EZTree.h"
 #import "EZNode.h"
 
@@ -75,13 +74,13 @@
 }
 
 -(void) WriteHeader:(EZTree*) tree sha:(NSString*) sha {
-    NSString* header = [NSString stringWithFormat:@"@HEAD\nEZV=%s\nSHA=%@\n", __EZ_VERSION__, sha];
+    NSString* header = [NSString stringWithFormat:@"@HEAD\nEZV=%s\nSHA=%@\n@MAP", __EZ_VERSION__, sha];
 
     for (int a = 0; a < tree.BaseNodes.count; a++) {
-        header = [header stringByAppendingFormat:@"%c = %@", ((EZNode*)tree.BaseNodes[a]).charc, [tree.Codes objectForKey:@(((EZNode*)tree.BaseNodes[a]).charc)]];
+        header = [header stringByAppendingFormat:@"%c=%@\n", ((EZNode*)tree.BaseNodes[a]).charc, [tree.Codes objectForKey:@(((EZNode*)tree.BaseNodes[a]).charc)]];
     }
 
-    header = [header stringByAppendingString:@"\n@END\n"];
+    header = [header stringByAppendingString:@"@END\n"];
 
     fprintf(self.file, "%s", [header UTF8String]);
 }

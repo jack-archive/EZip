@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>627FFC95-0754-4211-B1D2-368A7EF5EFEF</string>
+	<string>9B43CF5F-0309-4362-8564-EA967EE74346</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ez</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>803AB2C8-217C-486C-A5A9-65CB0EC6DFFB</key>
+		<key>06C3EE4D-87D6-416A-B1C7-05EB52F69DBB</key>
 		<string>https://github.com/jmmaloney4/EZip.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ez.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>803AB2C8-217C-486C-A5A9-65CB0EC6DFFB</key>
+		<key>06C3EE4D-87D6-416A-B1C7-05EB52F69DBB</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,16 +25,16 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>803AB2C8-217C-486C-A5A9-65CB0EC6DFFB</string>
+	<string>06C3EE4D-87D6-416A-B1C7-05EB52F69DBB</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>803AB2C8-217C-486C-A5A9-65CB0EC6DFFB</string>
+			<string>06C3EE4D-87D6-416A-B1C7-05EB52F69DBB</string>
 			<key>IDESourceControlWCCName</key>
-			<string>EZip</string>
+			<string>ez</string>
 		</dict>
 	</array>
 </dict>
