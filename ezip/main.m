@@ -31,12 +31,6 @@ int main(int argc, const char * argv[])
             exit(1);
         }
 
-        EZRandom* rand = [[EZRandom alloc] initWithSeed:100123112];
-
-        for (int a = 0; a < 10000000; a++) {
-            print(@"%d\n", [rand rand]);
-        }
-
         NSString* arg = [NSString stringWithUTF8String:argv[1]];
 
         if ([@"-h" isEqualToString:arg] || [@"--help" isEqualToString:arg]) {
