@@ -21,6 +21,7 @@
 #import "EZTree.h"
 #import "EZNode.h"
 #import "EZOperationTimer.h"
+#import "EZBitWriter.h"
 
 @interface EZCompressor ()
 @property (readwrite, nonatomic, strong) NSString* path;
@@ -75,7 +76,6 @@
         int freq = (int) [frequencies countForObject:ch];
         EZNode* echar = [[EZNode alloc] init];
         echar.count = freq;
-        //print(@"%d, %c\n", echar.count, [ch integerValue]);
         echar.charc = [ch integerValue];
         [tree addNode:echar];
     }
@@ -84,16 +84,34 @@
 
     int outlength = 0;
 
+    print(@"\tConstructing Tree... ");
     // Constructs the tree upon which the codes are based off of
     [tree constructTree];
 
-    EZCodeMap* codes = [[NSMapTable alloc] init];
+    print(@"Done In %.5f Sec\n", [time time]);
+    print(@"\tGenerating Codes... ");
 
-    print(@"%@", ((EZNode*)tree.Nodes[0]));
+    EZCodeMap* codes = [[NSMapTable alloc] init];
 
     [tree GenerateCodes:((EZNode*)tree.Nodes[0]) toMap:codes currentCode:@""];
 
-    printSuccess(@"Successfully Compressed %ld Bytes To %d Bytes\n", length, outlength);
+    print(@"Done In %.5f Sec\n", [time time]);
+
+    print(@"\tCompressing... ");
+
+    EZBitWriter* bw = [[EZBitWriter alloc] initWithFile:@"./test.ez"];
+
+    [bw WriteHeader:tree sha:nil];
+
+    for (int a = 0; a < length; a++) {
+        [bw CompressAndWriteCharacter:fgetc(self.file) WithCoding:codes];
+    }
+
+    [bw flush];
+
+    print(@"Done In %.5f Sec\n", [time time]);
+
+    printSuccess(@"Successfully Compressed %ld Bytes To %d Bytes In %.5f Seconds\n", length, outlength, [start time]);
 }
 
 // Parses self.path to generate a file name
@@ -101,6 +119,30 @@
     NSArray* parts = [self.path componentsSeparatedByString:@"/"];
     NSString* rv = ((NSString*) parts[parts.count - 1]);
     rv = [rv stringByAppendingString:@".ez"];
+    return rv;
+}
+
++(NSString*) getSHAFromFile:(NSString*) path {
+    NSTask* sha = [[NSTask alloc] init];
+    [sha setLaunchPath:@"/usr/bin/shasum"];
+    [sha setArguments:@[@"--algorithm", @"256", path]];
+
+    NSFileManager* fm = [[NSFileManager alloc] init];
+    [sha setCurrentDirectoryPath:[fm currentDirectoryPath]];
+
+    NSPipe* pipe = [NSPipe pipe];
+    [sha setStandardOutput:pipe];
+
+    [sha launch];
+
+    NSFileHandle* file = [pipe fileHandleForReading];
+    NSData* data = [file readDataToEndOfFile];
+
+    NSString* rv = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+
+    NSArray* x = [rv componentsSeparatedByString:@"  "];
+    rv = ((NSString*) x[0]);
+    
     return rv;
 }
 

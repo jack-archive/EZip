@@ -92,22 +92,11 @@
 
     if (node.isLeaf) {
 
-        bitset w = 0;
+        EZBitset* bits = [[EZBitset alloc] initWithString:code];
 
-        // Convert string code to bitset
-        for (int a = 0; a < code.length; a++) {
-            if ([code characterAtIndex:a] == '0') {
-                //Do Nothing
-            } else if ([code characterAtIndex:a] == '1') {
-                setBit(&w, a);
-            } else {
-                [NSException raise:@"String Error" format:@"String Does Not Contain All Ones And Zeroes"];
-            }
-        }
+        //print(@"%@, %d, %d, %d, %c\n", bits.code, bits.value, bits.codelength, node.count, node.charc);
 
-        print(@"%@, %d, %c\n", code, w, node.charc);
-
-        [map setObject:@(w) forKey:@(node.charc)];
+        [map setObject:bits forKey:@(node.charc)];
     } else {
         if (node.leftChild) {
             [self GenerateCodes:node.leftChild toMap:map currentCode:[code stringByAppendingString:@"0"]];

@@ -26,9 +26,43 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
 
-        EZCompressor* comp = [[EZCompressor alloc] initWithInFile:@"./test"];
-        
-        [comp compress];
+        if (argc < 2) {
+            printUsage();
+            exit(1);
+        }
+
+        NSString* arg = [NSString stringWithUTF8String:argv[1]];
+
+        if ([@"-h" isEqualToString:arg] || [@"--help" isEqualToString:arg]) {
+            printHelp();
+        } else if ([@"-v" isEqualToString:arg] || [@"--version" isEqualToString:arg]) {
+            printVersion();
+        } else if ([@"-l" isEqualToString:arg]) {
+            showLicense();
+        } else if ([@"-a" isEqualToString:arg]) {
+            // Create Archive
+
+            if (argc < 3) {
+                printErr(@"-a Requires An Argument");
+                exit(1);
+            }
+
+            EZCompressor* c = [[EZCompressor alloc] initWithInFile:[NSString stringWithUTF8String:argv[2]]];
+            [c compress];
+
+        } else if ([@"-x" isEqualToString:arg]) {
+            // Extract Archive
+
+            if (argc < 3) {
+                printErr(@"-x Requires An Argument");
+                exit(1);
+            }
+
+            //[ez decompressFile:[NSString stringWithUTF8String:argv[2]]];
+
+        } else {
+            printErr(@"Arguments Are Invalid");
+        }
         
     }
     return 0;

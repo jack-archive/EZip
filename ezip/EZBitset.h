@@ -61,3 +61,13 @@ void setBit(bitset* set, int i);
 void unsetBit(bitset* set, int i);
 
 #endif
+
+@interface EZBitset : NSObject
+
+@property bitset value;
+@property long int codelength;
+@property NSString* code;
+
+-(instancetype) initWithString:(NSString*) code;
+
+@end

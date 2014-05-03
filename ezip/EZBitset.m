@@ -17,6 +17,7 @@
 //
 
 #import "EZBitset.h"
+#import "ezip.h"
 
 void setBit(bitset* set, int i) {
     switch (i) {
@@ -131,3 +132,32 @@ void unsetBit(bitset* set, int i) {
             break;
     }
 }
+
+
+@implementation EZBitset
+
+-(instancetype) initWithString:(NSString*) code {
+    self = [super init];
+
+    self.code = code;
+
+    bitset w = 0;
+    // Convert string code to bitset
+    for (int a = 0; a < code.length; a++) {
+        if ([code characterAtIndex:a] == '0') {
+            //Do Nothing
+        } else if ([code characterAtIndex:a] == '1') {
+            setBit(&w, 15 - a);
+        } else {
+            [NSException raise:@"String Error" format:@"String Does Not Contain All Ones And Zeroes"];
+        }
+    }
+
+    self.codelength = code.length;
+
+    self.value = w;
+
+    return self;
+}
+
+@end
