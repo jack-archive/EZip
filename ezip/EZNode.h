@@ -16,21 +16,15 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-
 #import <Foundation/Foundation.h>
-#import "EZCompressor.h"
-#import "ezip.h"
 
-int main(int argc, const char * argv[])
-{
+@interface EZNode : NSObject
 
-    @autoreleasepool {
+@property EZNode* parent;
+@property EZNode* leftChild;
+@property EZNode* rightChild;
+@property char charc;
+@property int count;
+@property BOOL isLeaf;
 
-        EZCompressor* comp = [[EZCompressor alloc] initWithInFile:@"./test"];
-        
-        [comp compress];
-        
-    }
-    return 0;
-}
-
+@end

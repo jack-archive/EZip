@@ -17,20 +17,18 @@
 //
 
 
-#import <Foundation/Foundation.h>
-#import "EZCompressor.h"
-#import "ezip.h"
+#import "EZOperationTimer.h"
 
-int main(int argc, const char * argv[])
-{
+@implementation EZOperationTimer
 
-    @autoreleasepool {
-
-        EZCompressor* comp = [[EZCompressor alloc] initWithInFile:@"./test"];
-        
-        [comp compress];
-        
-    }
-    return 0;
+-(void) start {
+    self.date = [NSDate date];
 }
 
+-(NSTimeInterval) time {
+    NSTimeInterval t = [self.date timeIntervalSinceNow];
+    self.date = [NSDate date];
+    return t - (t * 2);
+}
+
+@end

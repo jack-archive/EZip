@@ -12,6 +12,10 @@
 		04A5742D191438AC00AA5647 /* ezip.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04A5742C191438AC00AA5647 /* ezip.1 */; };
 		04A57435191438C900AA5647 /* ezip.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A57434191438C900AA5647 /* ezip.m */; };
 		04A574381914394300AA5647 /* EZCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A574371914394300AA5647 /* EZCompressor.m */; };
+		04A5743B19146F9600AA5647 /* EZBitset.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5743A19146F9600AA5647 /* EZBitset.m */; };
+		04A574401914787E00AA5647 /* EZNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5743D1914787E00AA5647 /* EZNode.m */; };
+		04A574411914787E00AA5647 /* EZTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5743F1914787E00AA5647 /* EZTree.m */; };
+		04A5744419147AD300AA5647 /* EZOperationTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5744319147AD300AA5647 /* EZOperationTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +41,14 @@
 		04A57434191438C900AA5647 /* ezip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ezip.m; sourceTree = "<group>"; };
 		04A574361914394300AA5647 /* EZCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZCompressor.h; sourceTree = "<group>"; };
 		04A574371914394300AA5647 /* EZCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZCompressor.m; sourceTree = "<group>"; };
+		04A5743919146F9600AA5647 /* EZBitset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZBitset.h; sourceTree = "<group>"; };
+		04A5743A19146F9600AA5647 /* EZBitset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZBitset.m; sourceTree = "<group>"; };
+		04A5743C1914787E00AA5647 /* EZNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZNode.h; sourceTree = "<group>"; };
+		04A5743D1914787E00AA5647 /* EZNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZNode.m; sourceTree = "<group>"; };
+		04A5743E1914787E00AA5647 /* EZTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZTree.h; sourceTree = "<group>"; };
+		04A5743F1914787E00AA5647 /* EZTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZTree.m; sourceTree = "<group>"; };
+		04A5744219147AD300AA5647 /* EZOperationTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZOperationTimer.h; sourceTree = "<group>"; };
+		04A5744319147AD300AA5647 /* EZOperationTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZOperationTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +92,18 @@
 			isa = PBXGroup;
 			children = (
 				04A57428191438AC00AA5647 /* main.m */,
+				04A5743919146F9600AA5647 /* EZBitset.h */,
+				04A5743A19146F9600AA5647 /* EZBitset.m */,
 				04A57433191438C900AA5647 /* ezip.h */,
 				04A57434191438C900AA5647 /* ezip.m */,
 				04A574361914394300AA5647 /* EZCompressor.h */,
 				04A574371914394300AA5647 /* EZCompressor.m */,
+				04A5744219147AD300AA5647 /* EZOperationTimer.h */,
+				04A5744319147AD300AA5647 /* EZOperationTimer.m */,
+				04A5743C1914787E00AA5647 /* EZNode.h */,
+				04A5743D1914787E00AA5647 /* EZNode.m */,
+				04A5743E1914787E00AA5647 /* EZTree.h */,
+				04A5743F1914787E00AA5647 /* EZTree.m */,
 				04A5742C191438AC00AA5647 /* ezip.1 */,
 				04A5742A191438AC00AA5647 /* Supporting Files */,
 			);
@@ -149,9 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A5744419147AD300AA5647 /* EZOperationTimer.m in Sources */,
 				04A57429191438AC00AA5647 /* main.m in Sources */,
 				04A57435191438C900AA5647 /* ezip.m in Sources */,
+				04A574411914787E00AA5647 /* EZTree.m in Sources */,
 				04A574381914394300AA5647 /* EZCompressor.m in Sources */,
+				04A5743B19146F9600AA5647 /* EZBitset.m in Sources */,
+				04A574401914787E00AA5647 /* EZNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

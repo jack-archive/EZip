@@ -16,21 +16,21 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-
 #import <Foundation/Foundation.h>
-#import "EZCompressor.h"
+#import "EZNode.h"
 #import "ezip.h"
 
-int main(int argc, const char * argv[])
-{
+@interface EZTree : NSObject
 
-    @autoreleasepool {
+@property (nonatomic, readonly, strong) NSMutableArray* BaseNodes;
+@property (nonatomic, readonly, strong) NSMutableArray* Nodes;
 
-        EZCompressor* comp = [[EZCompressor alloc] initWithInFile:@"./test"];
-        
-        [comp compress];
-        
-    }
-    return 0;
-}
+/*  Tells the program when the node array has been modified */
+@property (nonatomic, readonly) BOOL modified;
+@property (nonatomic, readonly, strong) EZCodeMap* Codes;
 
+-(void) constructTree;
+-(void) addNode:(EZNode*) node;
+-(void) GenerateCodes:(EZNode*) node toMap:(EZCodeMap*)map currentCode:(NSString*) code;
+
+@end

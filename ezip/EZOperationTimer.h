@@ -18,19 +18,10 @@
 
 
 #import <Foundation/Foundation.h>
-#import "EZCompressor.h"
-#import "ezip.h"
 
-int main(int argc, const char * argv[])
-{
+@interface EZOperationTimer : NSObject
 
-    @autoreleasepool {
-
-        EZCompressor* comp = [[EZCompressor alloc] initWithInFile:@"./test"];
-        
-        [comp compress];
-        
-    }
-    return 0;
-}
-
+@property NSDate* date;
+-(void) start;
+-(NSTimeInterval) time;
+@end

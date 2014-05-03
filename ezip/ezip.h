@@ -43,11 +43,14 @@ void printErr(NSString* x, ...);
 void printWarn(NSString* x, ...);
 void printInfo(NSString* x, ...);
 void printSuccess(NSString* x, ...);
+void printFailure(NSString* x, ...);
 void printUsage();
 void printHelp();
 void printVersion();
 void showLicense();
 #endif
+
+typedef NSMapTable EZCodeMap;
 
 @interface ezip : NSObject
 

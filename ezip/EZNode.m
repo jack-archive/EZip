@@ -16,21 +16,18 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
+#import "EZNode.h"
 
-#import <Foundation/Foundation.h>
-#import "EZCompressor.h"
-#import "ezip.h"
+@implementation EZNode
 
-int main(int argc, const char * argv[])
-{
-
-    @autoreleasepool {
-
-        EZCompressor* comp = [[EZCompressor alloc] initWithInFile:@"./test"];
-        
-        [comp compress];
-        
-    }
-    return 0;
+-(instancetype) init {
+    self = [super init];
+    self.isLeaf = NO;
+    return self;
 }
 
+-(NSString*) description {
+    return [NSString stringWithFormat:@"{EZNode Count:%d Character:%c}", self.count, self.charc];
+}
+
+@end

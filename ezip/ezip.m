@@ -92,6 +92,17 @@ void printSuccess(NSString* x, ...) {
     va_end(f);
 }
 
+void printFailure(NSString* x, ...) {
+    va_list(f);
+    va_start(f, x);
+
+    NSString* r = [NSString stringWithFormat:@"%@✘ %@%@", BOLDRED, x, RESET];
+
+    print_core(NO, r, f);
+
+    va_end(f);
+}
+
 void printUsage() {
     print(@"Usage: \tez [-lhv] \n\tez [-cx] arguments ...\n");
     print(@"Type ez --help for more help");

@@ -18,6 +18,9 @@
 
 #import "EZCompressor.h"
 #import "ezip.h"
+#import "EZTree.h"
+#import "EZNode.h"
+#import "EZOperationTimer.h"
 
 @interface EZCompressor ()
 @property (readwrite, nonatomic, strong) NSString* path;
@@ -30,6 +33,7 @@
 -(instancetype) initWithInFile:(NSString*) path {
     self = [super init];
     self.path = path;
+    self.file = fopen([self.path UTF8String], "r");
     return self;
 }
 
@@ -41,17 +45,55 @@
 // Compresses the file at self.path
 -(void) compress {
 
+    EZOperationTimer* start = [[EZOperationTimer alloc] init];
+    EZOperationTimer* time = [[EZOperationTimer alloc] init];
+    [start start];
+    [time start];
+
+    printInfo(@"Compressing File At %@ to %@\n", self.path, [self calculateOutFileName]);
+    print(@"\tIndexing File... ");
+
     // Stores the frequencies of each character
     NSCountedSet* frequencies = [[NSCountedSet alloc] init];
 
+    fseek(self.file, 0L, SEEK_END);
+    long length = ftell(self.file);
+    fseek(self.file, 0L, SEEK_SET);
+
     // reads the file and parses each character, then adds it to frequencies
-    char a;
-    a = fgetc(self.file);
-    while (a != EOF) {
-        [frequencies addObject:@((char) a)];
-        print(@"%c", a);
-        a = fgetc(self.file);
+    char b;
+    b = fgetc(self.file);
+    while (b != EOF) {
+        [frequencies addObject:@((char) b)];
+        b = fgetc(self.file);
     }
+
+    EZTree* tree = [[EZTree alloc] init];
+
+    // Adds the characters and their frequencies from the NSCountedSet to the EZTree
+    for (NSNumber* ch in frequencies) {
+        int freq = (int) [frequencies countForObject:ch];
+        EZNode* echar = [[EZNode alloc] init];
+        echar.count = freq;
+        //print(@"%d, %c\n", echar.count, [ch integerValue]);
+        echar.charc = [ch integerValue];
+        [tree addNode:echar];
+    }
+
+    print(@"Done In %.5f Sec\n", [time time]);
+
+    int outlength = 0;
+
+    // Constructs the tree upon which the codes are based off of
+    [tree constructTree];
+
+    EZCodeMap* codes = [[NSMapTable alloc] init];
+
+    print(@"%@", ((EZNode*)tree.Nodes[0]));
+
+    [tree GenerateCodes:((EZNode*)tree.Nodes[0]) toMap:codes currentCode:@""];
+
+    printSuccess(@"Successfully Compressed %ld Bytes To %d Bytes\n", length, outlength);
 }
 
 // Parses self.path to generate a file name
