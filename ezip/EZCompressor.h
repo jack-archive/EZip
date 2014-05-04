@@ -22,6 +22,7 @@
 
 @property (readonly, nonatomic, strong) NSString* path;
 @property (readonly, nonatomic) FILE* file;
+@property (readonly, nonatomic) FILE* outfile;
 
 -(instancetype) initWithInFile:(NSString*) path;
 -(void) compress;

@@ -113,8 +113,8 @@ void printHelp() {
 }
 
 void printVersion() {
-    print(@"EZip Version: %s\n", __EZ_VERSION__);
-    print(@"Built On: %s at %s\n", __DATE__, __TIME__);
+    print(@"EZip Version %s\n", __EZ_VERSION__);
+    print(@"Built On %s at %s\n", __DATE__, __TIME__);
     print(@"\nCopyright (c) 2014 Jack Maloney\n");
 
     print(@"\nThis program is free software: you can redistribute it and/or modify\n");

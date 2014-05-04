@@ -26,6 +26,7 @@
 @interface EZCompressor ()
 @property (readwrite, nonatomic, strong) NSString* path;
 @property (readwrite, nonatomic) FILE* file;
+@property (readwrite, nonatomic) FILE* outfile;
 @end
 
 @implementation EZCompressor
@@ -35,6 +36,7 @@
     self = [super init];
     self.path = path;
     self.file = fopen([self.path UTF8String], "r");
+    self.outfile = fopen([[self calculateOutFileName] UTF8String], "w");
     return self;
 }
 
@@ -99,12 +101,14 @@
 
     print(@"\tCompressing... ");
 
-    EZBitWriter* bw = [[EZBitWriter alloc] initWithFile:@"./test.ez"];
+    EZBitWriter* bw = [[EZBitWriter alloc] initWithFile:[self calculateOutFileName]];
 
     [bw WriteHeader:tree sha:nil];
 
     for (int a = 0; a < length; a++) {
-        [bw CompressAndWriteCharacter:fgetc(self.file) WithCoding:codes];
+        char c = fgetc(self.file);
+        [bw CompressAndWriteCharacter:c WithCoding:codes];
+        print(@"Compressing %c\n", c);
     }
 
     [bw flush];
